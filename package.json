@@ -1,0 +1,19 @@
+{
+  "name": "ecares-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./public/tailwind/input.css -o ./public/tailwind/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "^5.0.28",
+    "preline": "^2.4.1"
+  }
+}
