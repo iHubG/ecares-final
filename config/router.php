@@ -2,7 +2,9 @@
     
     $routes = [ 
         '/ecares-final/' => 'index',
-        '/ecares-final/about' => 'about',
+        '/ecares-final/admin-login' => 'admin-login',
+        '/ecares-final/practitioner-login' => 'practitioner-login',
+        '/ecares-final/mother-login' => 'mother-login',
     ];
 
     $url = $_SERVER['REQUEST_URI'];
@@ -15,8 +17,14 @@
             case 'index':
                 require "./views/home.view.php";
                 break;
-            case 'about':
-                echo "about page";
+            case 'admin-login':
+                require "./views/admin-login.view.php";
+                break;
+            case 'practitioner-login':
+                require "./views/practitioner-login.view.php";
+                break;
+            case 'mother-login':
+                require "./views/mother-login.view.php";
                 break;
             default:
                 echo "404 Page Not Found";
