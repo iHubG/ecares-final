@@ -4,7 +4,9 @@
         '/ecares-final/' => 'index',
         '/ecares-final/admin-login' => 'admin-login',
         '/ecares-final/practitioner-login' => 'practitioner-login',
+        '/ecares-final/practitioner-signup' => 'practitioner-signup',
         '/ecares-final/mother-login' => 'mother-login',
+        '/ecares-final/mother-signup' => 'mother-signup',
     ];
 
     $url = $_SERVER['REQUEST_URI'];
@@ -23,15 +25,20 @@
             case 'practitioner-login':
                 require "./views/practitioner-login.view.php";
                 break;
+            case 'practitioner-signup':
+                require "./views/practitioner-signup.view.php";
+                break;
             case 'mother-login':
                 require "./views/mother-login.view.php";
                 break;
+            case 'mother-signup':
+                require "./views/mother-signup.view.php";
+                break;
             default:
-                echo "404 Page Not Found";
+                echo "<h2 class='text-center text-4xl text-gray-500 mt-5'> 404 Page Not Found </h2>";
                 break;
         }
     } else {
-        echo "404 Page Not Found";
+        echo "<h2 class='text-center text-4xl text-gray-500 mt-5'> 404 Page Not Found </h2>";
 
     }
-

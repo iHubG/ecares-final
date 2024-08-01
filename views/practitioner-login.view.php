@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Practitioner Login</title>
     <link rel="stylesheet" href="./public/tailwind/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div class="xxl:container flex justify-center items-center font-sans">
-        <div class="border-t-2 flex flex-col sm:w-6/12 md:w-2/5 lg:w-2/6 xl:w-1/4 2xl:w-1/5 w-11/12 px-10 py-8 mt-28 shadow-sm shadow-sky-950 rounded-md">
-            <h2 class="text-center text-2xl font-medium">Sign in for eCARES</h2>
-            <h2 class="text-center text-2xl font-medium">as</h2>
-            <h2 class="text-center text-2xl font-medium mb-6">Health Practitioner</h2>
+    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
+        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        Back to home
+    </a>
+    <div class="xxl:container flex justify-center items-center font-sans">
+        <div class="border-t-2 flex flex-col sm:w-6/12 md:w-2/5 lg:w-2/6 xl:w-80 2xl:w-1/5 w-11/12 px-10 py-8 mt-10 2xl:mt-28 shadow-sm shadow-sky-950 rounded-md">
+            <h2 class="text-center 2xl:text-2xl text-xl font-medium">Sign in for eCARES</h2>
+            <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
+            <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Health Practitioner</h2>
             <form action="">
-                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none text-lg mb-5" placeholder="Username">
+                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none 2xl:text-lg text-base mb-5" placeholder="Username">
                 <div class="relative mb-3">
-                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg text-lg outline-none" placeholder="Password">
+                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none" placeholder="Password">
                     <button type="button" data-hs-toggle-password='{
                         "target": "#hs-toggle-password"
                     }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
@@ -32,17 +37,17 @@
                 <div class="flex mb-3 justify-between">
                     <div class="flex items-center">
                         <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="hs-checked-checkbox" checked="">
-                        <label for="hs-checked-checkbox" class="text-sm text-gray-500 ms-3 dark:text-neutral-400">Remember Me</label>
+                        <label for="hs-checked-checkbox" class="2xl:text-sm text-xs text-gray-500 ms-3 dark:text-neutral-400">Remember Me</label>
                     </div>
                     <div class="div">
-                        <a href="#" class="text-sm text-gray-500">Forgot Password?</a>
+                        <a href="#" class="2xl:text-sm text-xs text-gray-500">Forgot Password?</a>
                     </div>
                 </div>
             
 
-                <input type="submit" class="bg-sky-500 hover:bg-sky-700 p-3 mb-6 text-center rounded-xl text-white w-full cursor-pointer" value="Sign In">
+                <input type="submit" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 text-base mb-6 text-center rounded-xl text-white w-full cursor-pointer" value="Sign In">
 
-                <p class="text-center text-sm">Dont have an account? <a href="#" class="text-sky-500">Sign up here</a></p>    
+                <p class="text-center 2xl:text-sm text-xs">Dont have an account? <a href="/ecares-final/practitioner-signup" class="text-sky-500">Sign up here</a></p>    
             </form>
         </div>
     </div>
