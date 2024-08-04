@@ -18,7 +18,7 @@
         else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
     </script>
 </head>
-<body class="overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-800 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
+<body class="overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
   
     <?php include "admin-navbar.view.php"; ?>
     <?php 
@@ -29,9 +29,9 @@
     ?>
     <div class="flex">
         <div class="w-auto"><?php include "admin-sidebar.view.php"; ?></div>
-        <div id="main-content" class="bg-slate-100 dark:bg-slate-500 w-full">
+        <div id="main-content" class="bg-slate-100 dark:bg-sky-900 w-full">
             <div class="xxl:container py-3 w-full text-wrap h-screen scroll-smooth max-h-screen overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-800 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
-                <div class="flex items-center justify-between px-4 pb-4">
+                <div class="flex items-center justify-between px-4 pb-5 pt-1">
                     <h2 class="text-xl font-medium dark:text-gray-100">Dashboard</h2>
                     <div class="flex">
                         <p class="text-base dark:text-gray-100" id="date"><?php echo $currentDate;?></p>
@@ -41,45 +41,45 @@
                 <hr class="border-gray-200 dark:border-gray-100">
                 <div class="dashboard-content px-4 py-5">
                     <div class="grid grid-cols-3 gap-5">
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">TOTAL USERS</h2>
-                                <p class="text-lg font-medium text-gray-700">20</p>
+                                <h2 class="text-base font-medium text-gray-700 dark:text-gray-100">TOTAL USERS</h2>
+                                <h2 class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">20</h2>
                             </div>
                             <img src="./public/img/users.png" alt="users" class="w-10">
                         </div>
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">HEALTHCARE FACILITIES</h2>
-                                <p class="text-lg font-medium text-gray-700">10</p>
+                                <h2 class="text-base font-medium dark:text-gray-100">HEALTHCARE FACILITIES</h2>
+                                <p class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">10</p>
                             </div>
                             <img src="./public/img/facility.png" alt="users" class="w-10">
                         </div>
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">HEALTH PRACTITIONERS</h2>
-                                <p class="text-lg font-medium text-gray-700">15</p>
+                                <h2 class="text-base font-medium dark:text-gray-100">HEALTH PRACTITIONERS</h2>
+                                <p class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">15</p>
                             </div>
                             <img src="./public/img/practitioner-red.png" alt="users" class="w-10">
                         </div>
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">POSTPARTUM MOTHERS</h2>
-                                <p class="text-lg font-medium text-gray-700">42</p>
+                                <h2 class="text-base font-medium dark:text-gray-100">POSTPARTUM MOTHERS</h2>
+                                <p class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">42</p>
                             </div>
                             <img src="./public/img/mother-pink.png" alt="users" class="w-10">
                         </div>
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">ADMINS</h2>
-                                <p class="text-lg font-medium text-gray-700">3</p>
+                                <h2 class="text-base font-medium dark:text-gray-100">ADMINS</h2>
+                                <p class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">3</p>
                             </div>
                             <img src="./public/img/admin.png" alt="users" class="w-10">
                         </div>
-                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between">
+                        <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
-                                <h2 class="text-base font-medium">POSTPARTUM COMPLETERS</h2>
-                                <p class="text-lg font-medium text-gray-700">12</p>
+                                <h2 class="text-base font-medium dark:text-gray-100">POSTPARTUM COMPLETERS</h2>
+                                <p class="text-2xl 2xl:text-3xl font-semibold text-gray-700 dark:text-gray-100">12</p>
                             </div>
                             <img src="./public/img/check.png" alt="users" class="w-10">
                         </div>

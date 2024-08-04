@@ -4,7 +4,7 @@
 </head>
 <body>
    <div class="container z-0 sticky border-r border-gray-200 dark:border-0 dark:drop-shadow-lg dark:bg-sky-950 w-fit px-5 py-5 h-screen">
-        <a href="">
+        <a href="/ecares-final/admin-dashboard">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap dark:hover:bg-gray-700 mb-2 items-center">
@@ -17,7 +17,7 @@
                 </button>
             </div>
         </a>
-        <a href="">
+        <a href="/ecares-final/admin-facilities">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
