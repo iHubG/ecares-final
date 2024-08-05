@@ -41,7 +41,7 @@
                 </div>  
                 <hr class="border-gray-200 dark:border-gray-100">
                 <div class="dashboard-content px-4 py-5">
-                    <div class="search w-full mb-8 flex justify-center">
+                    <div class="search w-full flex justify-center">
                         <div class="w-2/5">
                         <!-- SearchBox -->
                             <div class="relative" data-hs-combo-box='{
@@ -71,15 +71,15 @@
                         <!-- End SearchBox -->
                         </div>
                     </div>
-                    <div class="w-full flex justify-end py-3 px-3">
-                        <button id="exportButton" class="flex text-sm text-end items-center gap-2 bg-green-200 dark:bg-green-600 dark:text-gray-300 p-1 px-2 rounded-lg hover:opacity-80">
+                    <div class="w-full flex justify-end py-3 px-1">
+                        <button id="exportButton" class="flex text-sm text-end items-center gap-2 bg-green-200 dark:bg-green-700 text-gray-800 dark:text-gray-300 p-1 px-3 rounded-lg hover:opacity-80">
                         <p>Export as</p>
                             
                         <img src="./public/img/excel.png" alt="excel" class="w-6">
                         </button>
                     </div>
 
-                    <div class="py-3 px-3">
+                    <div class="py-3 px-1">
                         <div class="flex flex-col dark:bg-sky-950">
                             <div class="-m-1.5 overflow-x-auto">
                                 <div class="p-1.5 min-w-full inline-block align-middle">
@@ -104,7 +104,7 @@
                                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">jologalabay@gmail.com</td>
                                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-300">09234342455</td>
                                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-300">
-                                                <div class="bg-green-200 rounded-lg text-center p-1 dark:bg-green-600">Active</div>
+                                                <div class="bg-green-200 rounded-lg text-center p-1 dark:bg-green-700">Active</div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium flex gap-2 items-center justify-center">
                                                 <a href="#" class="hover:bg-gray-200 hover:rounded-full dark:hover:bg-gray-700 p-1">
