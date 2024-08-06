@@ -7,7 +7,7 @@
         <a href="/ecares-final/admin-dashboard">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-dashboard" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap dark:hover:bg-gray-700 mb-2 items-center dash-nav dashboard-link">
                         <img src="./public/img/monitor.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Dashboard</p>
                     </div>
@@ -20,7 +20,7 @@
         <a href="/ecares-final/admin-facilities">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-facilities" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
                         <img src="./public/img/facility.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Healthcare Facilities</p>
                     </div>
@@ -33,7 +33,7 @@
         <a href="/ecares-final/admin-practitioners">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-practitioners" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
                         <img src="./public/img/practitioner.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Health Practitioners</p>
                     </div>
@@ -43,10 +43,10 @@
                 </button>
             </div>
         </a>
-        <a href="">
+        <a href="/ecares-final/admin-mothers">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-mothers" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
                         <img src="./public/img/mother.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Postpartum Mothers</p>
                     </div>
@@ -56,10 +56,10 @@
                 </button>
             </div>
         </a>
-        <a href="">
+        <a href="/ecares-final/admin-logs">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-logs" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
                         <img src="./public/img/logs.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Activity Logs</p>
                     </div>
@@ -69,10 +69,10 @@
                 </button>
             </div>
         </a>
-        <a href="">
+        <a href="/ecares-final/admin-backup">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
-                    <div id="navContainer" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center">
+                    <div id="navContainer" data-path="admin-backup" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
                         <img src="./public/img/backup.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Database Backup</p>
                     </div>
@@ -91,44 +91,10 @@
    </div>
 
    <script>
-         // Function to handle toggle changes
-         function handleToggleChange() {
-            var isChecked = document.getElementById('hs-xs-switch').checked;
-            var navTexts = document.querySelectorAll('#navText');
-            var navItems = document.querySelectorAll('#navContainer');
-            var tooltips = document.querySelectorAll('#tooltip');
 
-            // Toggle visibility for all nav-text elements
-            navTexts.forEach(function(navText) {
-                navText.classList.toggle('hidden', isChecked);
-            });
-
-            // Toggle width for all nav-items
-            navItems.forEach(function(navItem) {
-                if (isChecked) {
-                    navItem.classList.remove('w-56');
-                    navItem.classList.add('w-fit');
-                } else {
-                    navItem.classList.remove('w-fit');
-                    navItem.classList.add('w-56');
-                }
-            });
-
-            tooltips.forEach(function(tooltip) {
-                if (isChecked) {
-                    tooltip.classList.remove('hs-tooltip-shown:invisible');
-                    tooltip.classList.add('hs-tooltip-shown:visible');
-                } else {
-                    tooltip.classList.remove('hs-tooltip-shown:visible');
-                    tooltip.classList.add('hs-tooltip-shown:invisible');
-                }
-            });
-        }
-
-        // Attach the function to the checkbox change event
-        document.getElementById('hs-xs-switch').addEventListener('change', handleToggleChange);
    </script>
-
+   
+<script src="./public/javascript/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/preline@2.4.1/dist/preline.min.js"></script>
 </body>
 </html>

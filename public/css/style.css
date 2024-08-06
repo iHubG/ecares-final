@@ -1,0 +1,5 @@
+.active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(224 242 254 / var(--tw-bg-opacity)) /* #e0f2fe */;
+    
+}
