@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Postpartum Mothers</title>
+    <title>Admin Activity Logs</title>
     <link rel="stylesheet" href="./public/tailwind/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -33,7 +33,7 @@
         <div id="main-content" class="bg-slate-100 dark:bg-sky-900 w-full">
             <div class="xxl:container py-3 w-full text-wrap h-screen scroll-smooth max-h-screen overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-800 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
                 <div class="flex items-center justify-between px-4 pb-5 pt-1">
-                    <h2 class="text-xl font-medium dark:text-gray-100">Postpartum Mothers</h2>
+                    <h2 class="text-xl font-medium dark:text-gray-100">Activity Logs</h2>
                     <div class="flex">
                         <p class="text-base dark:text-gray-100" id="date"><?php echo $currentDate;?></p>
                         <p class="text-base dark:text-gray-100" id="time">&nbsp;<?php echo $currentTime;?></p>
@@ -42,7 +42,7 @@
                 <hr class="border-gray-200 dark:border-gray-100">
                 <div class="dashboard-content px-4 py-5">
                     <div class="search w-full flex justify-center">
-                        <div class="w-2/5">                      
+                        <div class="w-2/5">
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3.5">
                                     <svg class="shrink-0 size-4 text-gray-400 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,8 +50,8 @@
                                     <path d="m21 21-4.3-4.3"></path>
                                     </svg>
                                 </div>
-                                <input class="py-3 ps-10 pe-4 block w-full border-gray-200 dark:bg-sky-950 dark:text-white dark:border-0 focus:outline-none rounded-full outline-none text-sm disabled:opacity-50 disabled:pointer-events-none" type="text" role="combobox" aria-expanded="false" placeholder="Search Postpartum Mother" value="" data-hs-combo-box-input="">
-                            </div>
+                                <input class="py-3 ps-10 pe-4 block w-full border-gray-200 dark:bg-sky-950 dark:text-white dark:border-0 focus:outline-none rounded-full outline-none text-sm disabled:opacity-50 disabled:pointer-events-none" type="text" role="combobox" aria-expanded="false" placeholder="Search User" value="" data-hs-combo-box-input="">
+                            </div>                           
                         </div>
                     </div>
                     <div class="w-full flex justify-end py-3 px-1">
@@ -68,49 +68,41 @@
                                 <div class="p-1.5 min-w-full inline-block align-middle">
                                     <div class="overflow-hidden">
                                         <table class="min-w-full divide-y divide-gray-200" id="data-table">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">#</th>
-                                            <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Name</th>
-                                            <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Birthdate</th>
-                                            <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Email</th>
-                                            <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Phone</th>
-                                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Status</th>
-                                            <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="divide-y divide-gray-200">
-                                            <tr>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">1</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">Maria Clara</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">May 2, 1995</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">mariaclara@gmail.com</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-300">09234342455</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-300">
-                                                <div class="bg-green-200 rounded-lg text-center p-1 dark:bg-green-700">Active</div>
-                                            </td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium flex gap-2 items-center justify-center">
-                                                <a href="#" class="hover:bg-gray-200 hover:rounded-full dark:hover:bg-gray-700 p-1">
-                                                    <img src="./public/img/edit.png" alt="edit" class="w-6">
-                                                </a>
-                                                <a href="#" class="hover:bg-gray-200 hover:rounded-full dark:hover:bg-gray-700 p-1">
-                                                    <img src="./public/img/delete.png" alt="edit" class="w-6">
-                                                </a>
-                                            </td>
-                                            </tr>
-                                           
-                                        </tbody>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">#</th>
+                                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Name</th>
+                                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Activity</th>
+                                                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-gray-300">Date & Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">2</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">Maria Clara</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">Logged Out</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">August 8, 2024 09:30:05 PM</td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">1</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">Maria Clara</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">Logged In</td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-300">August 8, 2024 09:25:05 PM</td>                      
+                                                </tr>
+                                            
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
         </div>
-    </div>
+    </div>               
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script>
         function updateTime() {
@@ -145,7 +137,7 @@
         const wb = XLSX.utils.table_to_book(table, { sheet: "Sheet1" });
         
         // Create an Excel file and trigger download
-        XLSX.writeFile(wb, 'Postpartum_Mothers_Data.xlsx');
+        XLSX.writeFile(wb, 'Activity_Logs_Data.xlsx');
     });
     </script>
 </body>

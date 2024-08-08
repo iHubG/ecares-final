@@ -56,6 +56,9 @@
         var navItems = document.querySelectorAll('#navContainer');
         var tooltips = document.querySelectorAll('#tooltip');
 
+        // Save the toggle state to localStorage
+        localStorage.setItem('toggleState', isChecked);
+
         // Toggle visibility for all nav-text elements
         navTexts.forEach(function(navText) {
             navText.classList.toggle('hidden', isChecked);
@@ -74,14 +77,24 @@
 
         tooltips.forEach(function(tooltip) {
             if (isChecked) {
-                tooltip.classList.remove('hs-tooltip-shown:invisible');
                 tooltip.classList.add('hs-tooltip-shown:visible');
+                tooltip.classList.remove('invisible');
             } else {
                 tooltip.classList.remove('hs-tooltip-shown:visible');
-                tooltip.classList.add('hs-tooltip-shown:invisible');
+                tooltip.classList.add('invisible');
             }
         });
     }
 
+   // Function to initialize the toggle state based on localStorage
+    function initializeToggleState() {
+        var savedState = localStorage.getItem('toggleState') === 'true';
+        document.getElementById('hs-xs-switch').checked = savedState;
+        handleToggleChange(); // Apply the saved state to the UI
+    }
+
     // Attach the function to the checkbox change event
     document.getElementById('hs-xs-switch').addEventListener('change', handleToggleChange);
+
+    // Initialize the toggle state when the page loads
+    window.addEventListener('DOMContentLoaded', initializeToggleState);

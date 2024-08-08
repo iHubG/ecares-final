@@ -799,6 +799,10 @@ select {
   pointer-events: none;
 }
 
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -870,6 +874,10 @@ select {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-\[80\] {
+  z-index: 80;
 }
 
 .-m-1\.5 {
@@ -954,6 +962,14 @@ select {
   margin-top: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1010,6 +1026,11 @@ select {
 .size-9 {
   width: 2.25rem;
   height: 2.25rem;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
 }
 
 .h-2 {
@@ -1224,6 +1245,10 @@ select {
   overflow-y: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1382,6 +1407,16 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-sky-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1639,6 +1674,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1730,6 +1770,10 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
 .active {
   --tw-bg-opacity: 1;
   background-color: rgb(224 242 254 / var(--tw-bg-opacity));
@@ -1775,6 +1819,12 @@ select {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:bg-sky-100::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .before\:shadow::before {
@@ -1870,6 +1920,16 @@ select {
   background-color: rgb(3 105 161 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1903,6 +1963,16 @@ select {
 .focus\:bg-gray-200:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-blue-700:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-gray-50:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .focus\:text-blue-600:focus {
@@ -1968,12 +2038,40 @@ select {
   opacity: 1;
 }
 
+.hs-tooltip.show .hs-tooltip-shown\:visible {
+  visibility: visible;
+}
+
 .hs-tooltip.show .hs-tooltip-shown\:invisible {
   visibility: hidden;
 }
 
 .hs-tooltip.show .hs-tooltip-shown\:opacity-100 {
   opacity: 1;
+}
+
+.open.hs-overlay-open\:mt-7 {
+  margin-top: 1.75rem;
+}
+
+.open.hs-overlay-open\:opacity-100 {
+  opacity: 1;
+}
+
+.open.hs-overlay-open\:duration-500 {
+  transition-duration: 500ms;
+}
+
+.open .hs-overlay-open\:mt-7 {
+  margin-top: 1.75rem;
+}
+
+.open .hs-overlay-open\:opacity-100 {
+  opacity: 1;
+}
+
+.open .hs-overlay-open\:duration-500 {
+  transition-duration: 500ms;
 }
 
 .active.hs-password-active\:block {
@@ -2009,8 +2107,21 @@ select {
 }
 
 @media (min-width: 550px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sm\:w-6\/12 {
     width: 50%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:max-w-lg {
+    max-width: 32rem;
   }
 }
 
@@ -2152,11 +2263,6 @@ select {
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-gray-700:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
 .dark\:bg-opacity-80:where(.dark, .dark *) {
   --tw-bg-opacity: 0.8;
 }
@@ -2203,6 +2309,11 @@ select {
 .dark\:text-white:where(.dark, .dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark\:text-gray-700:where(.dark, .dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .dark\:shadow-neutral-700\/70:where(.dark, .dark *) {
