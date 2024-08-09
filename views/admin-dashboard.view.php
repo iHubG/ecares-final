@@ -18,7 +18,7 @@
         else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
     </script>
 </head>
-<body class="overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
+<body class="overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950 font-sans">
   
     <?php include "admin-navbar.view.php"; ?>
     <?php 
@@ -90,6 +90,7 @@
         </div> 
     </div>
 
+    <script src="./public/javascript/darkmode.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script>
         function updateTime() {

@@ -11,6 +11,7 @@
         '/ecares-final/admin-backup' => 'admin-backup',
         '/ecares-final/practitioner-login' => 'practitioner-login',
         '/ecares-final/practitioner-signup' => 'practitioner-signup',
+        '/ecares-final/practitioner' => 'practitioner',
         '/ecares-final/mother-login' => 'mother-login',
         '/ecares-final/mother-signup' => 'mother-signup',
     ];
@@ -51,6 +52,9 @@
                 break;
             case 'practitioner-signup':
                 require "./views/practitioner-signup.view.php";
+                break;
+            case 'practitioner':
+                require "./views/practitioner-interface.view.php";
                 break;
             case 'mother-login':
                 require "./views/mother-login.view.php";

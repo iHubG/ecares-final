@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>
-   <div class="container z-0 sticky border-r border-gray-200 dark:border-0 dark:drop-shadow-lg dark:bg-sky-950 w-fit px-5 py-5 h-screen">
+   <div class="container z-0 sticky border-r border-gray-200 dark:border-0 dark:drop-shadow-lg dark:bg-sky-950 w-fit px-5 py-5 h-screen font-sans">
         <a href="/ecares-final/admin-dashboard">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">

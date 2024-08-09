@@ -17,7 +17,7 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">Sign in for eCARES</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Health Practitioner</h2>
-            <form action="">
+            <form action="/ecares-final/practitioner" method="post">
                 <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none 2xl:text-lg text-base mb-5" placeholder="Username">
                 <div class="relative mb-3">
                     <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none" placeholder="Password">

@@ -8,6 +8,10 @@ module.exports = {
   darkMode: 'selector',
 
   theme: {
+    container: {
+      center: true,
+    },
+
     extend: {
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
@@ -16,6 +20,8 @@ module.exports = {
       screens: {
         sm: '550px',
       },
+
+     
     },
   },
   plugins: [
