@@ -17,6 +17,12 @@ module.exports = {
         sans: ['Open Sans', 'sans-serif'],
       },
 
+      ringWidth: {
+        DEFAULT: '0', 
+      },
+      ringColor: {
+        DEFAULT: 'transparent', 
+      },
       screens: {
         sm: '550px',
       },

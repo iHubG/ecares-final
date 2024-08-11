@@ -18,9 +18,9 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Postpartum Mother</h2>
             <form action="">
-                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none 2xl:text-lg text-base mb-5" placeholder="Phone">
+                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border focus:border-rose-500 focus:ring-rose-500 2xl:text-lg text-base mb-5" placeholder="Phone">
                 <div class="relative mb-3">
-                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none" placeholder="Password">
+                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base focus:border-rose-500 focus:ring-rose-500" placeholder="Password">
                     <button type="button" data-hs-toggle-password='{
                         "target": "#hs-toggle-password"
                     }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">

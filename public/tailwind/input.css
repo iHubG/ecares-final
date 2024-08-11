@@ -7,4 +7,14 @@
     .active {
         @apply bg-sky-100 dark:bg-gray-700;
     }
+
+    .without-ring {
+        @apply focus:ring-0 focus:ring-offset-0;
+    }
+
+    :focus {
+        @apply appearance-none outline-none;
+    }
+    
+      
 }
