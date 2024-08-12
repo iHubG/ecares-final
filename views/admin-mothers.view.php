@@ -50,7 +50,7 @@
                                     <path d="m21 21-4.3-4.3"></path>
                                     </svg>
                                 </div>
-                                <input class="py-3 ps-10 pe-4 block w-full border-gray-200 dark:bg-sky-950 dark:text-white dark:border-0 focus:outline-none rounded-full outline-none text-sm disabled:opacity-50 disabled:pointer-events-none" type="text" role="combobox" aria-expanded="false" placeholder="Search Postpartum Mother" value="" data-hs-combo-box-input="">
+                                <input class="py-3 ps-10 pe-4 block w-full border-gray-200 dark:bg-sky-950 dark:text-white dark:border-0 focus:outline-none rounded-full outline-none text-sm disabled:opacity-50 disabled:pointer-events-none focus:border-slate-100 focus:ring-slate-100" type="text" role="combobox" aria-expanded="false" placeholder="Search Postpartum Mother" value="" data-hs-combo-box-input="">
                             </div>
                         </div>
                     </div>

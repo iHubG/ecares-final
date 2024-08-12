@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
+    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-rose-600 focus:outline-none focus:text-rose-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Back to home
     </a>
@@ -18,12 +18,12 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Postpartum Mother</h2>
             <form action="">
-                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none 2xl:text-lg text-base mb-5" placeholder="Phone e.g. 09434343438">
+                <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none 2xl:text-lg text-base mb-5 focus:border-rose-500 focus:ring-rose-500" placeholder="Phone e.g. 09434343438">
                 <div class="relative mb-3">
-                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none" placeholder="Password">
+                    <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none focus:border-rose-500 focus:ring-rose-500" placeholder="Password">
                     <button type="button" data-hs-toggle-password='{
                         "target": "#hs-toggle-password"
-                    }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
+                    }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-rose-600 dark:text-neutral-600 dark:focus:text-blue-500">
                     <svg class="shrink-0 size-3.5" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
                         <path class="hs-password-active:hidden" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
@@ -35,10 +35,10 @@
                     </button>
                 </div>
                 <div class="relative mb-3">
-                    <input id="confirm-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none" placeholder="Confirm Password">
+                    <input id="confirm-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base outline-none focus:border-rose-500 focus:ring-rose-500" placeholder="Confirm Password">
                     <button type="button" data-hs-toggle-password='{
                         "target": "#confirm-toggle-password"
-                    }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-blue-600 dark:text-neutral-600 dark:focus:text-blue-500">
+                    }' class="absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-gray-400 rounded-e-md focus:outline-none focus:text-rose-600 dark:text-neutral-600 dark:focus:text-blue-500">
                     <svg class="shrink-0 size-3.5" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path class="hs-password-active:hidden" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
                         <path class="hs-password-active:hidden" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
@@ -58,7 +58,7 @@
 
                 <input type="submit" class="bg-rose-500 hover:bg-rose-700 2xl:p-3 p-2 text-base mb-6 text-center rounded-xl text-white w-full cursor-pointer" value="Sign Up">
 
-                <p class="text-center 2xl:text-sm text-xs">Have an account? <a href="/ecares-final/practitioner-login" class="text-rose-500">Sign in here</a></p>    
+                <p class="text-center 2xl:text-sm text-xs">Have an account? <a href="/ecares-final/mother-login" class="text-rose-500">Sign in here</a></p>    
             </form>
         </div>
     </div>
