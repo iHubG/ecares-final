@@ -109,11 +109,87 @@
 
                 </div>
             </div>
+
+            <!-- Edit Admin Profile Modal -->
+            <div id="edit-admin-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-admin-label">
+                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
+                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
+                        <div class="flex justify-between items-center py-3 px-4">
+                            <h3 id="edit-admin-label" class="font-bold text-gray-800 dark:text-gray-300">
+                                
+                            </h3>
+                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#edit-admin-modal">
+                            <span class="sr-only">Close</span>
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                            </button>
+                        </div>
+
+                        <div class="py-3 flex flex-col items-start px-10">
+                            <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
+                            <div data-hs-file-upload='{
+                            "url": "/ecares-final/upload",
+                            "acceptedFiles": "image/*",
+                            "maxFiles": 1,
+                            "singleton": true
+                            }' class="mb-5">
+                                <template data-hs-file-upload-preview="">
+                                    <div class="size-20">
+                                    <img class="w-full object-contain rounded-full" data-dz-thumbnail="">
+                                    </div>
+                                </template>
+
+                                <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+                                    <div class="group" data-hs-file-upload-previews="" data-hs-file-upload-pseudo-trigger="">
+                                    <span class="group-has-[div]:hidden flex shrink-0 justify-center items-center size-20 border-2 border-dotted border-gray-300 text-gray-400 cursor-pointer rounded-full hover:bg-gray-50">
+                                        <svg class="shrink-0 size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                        <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
+                                        </svg>
+                                    </span>
+                                    </div>
+
+                                    <div class="grow">
+                                    <div class="flex items-center gap-x-2">
+                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-trigger="">
+                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="17 8 12 3 7 8"></polyline>
+                                            <line x1="12" x2="12" y1="3" y2="15"></line>
+                                        </svg>
+                                        Upload photo
+                                        </button>
+                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-clear="">Delete</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Name">
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Email">
+                        
+                            <div class="message-response">
+
+                            </div>
+                        </div>
+                    
+                        <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
+                            <input type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer" value="Update">                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <script src="./public/javascript/darkmode.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./node_modules/lodash/lodash.min.js"></script>
+    <script src="./node_modules/dropzone/dist/dropzone-min.js"></script>
     <script>
         function updateTime() {
             fetch(window.location.href) // Fetch the current page
