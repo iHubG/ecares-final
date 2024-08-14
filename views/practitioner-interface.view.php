@@ -32,7 +32,7 @@
                             <a href="/ecares-final/practitioner" class="">Home</a>                          
                         </div>
                         <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
-                            <a href="/ecares-final/practitioner-materials" class="">Learning Materials</a>                          
+                            <a href="/ecares-final/practitioner/learning-materials" class="">Learning Materials</a>                          
                         </div>
                         <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
                             <a href="mailto:ecares@gmail.com" class="">Contact Administrator</a>                          
@@ -97,8 +97,8 @@
                         <p class="text-sm text-gray-500 dark:text-neutral-400">Cauayan City, Isabela</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-facility-modal" data-hs-overlay="#edit-facility-modal">
-                            <img src="./public/img/edit.png"  alt="Edit" class="w-6">
+                        <a class="hover:bg-gray-200 p-1 rounded-full" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-facility-modal" data-hs-overlay="#edit-facility-modal">
+                            <img src="./public/img/edit.png"  alt="Edit" class="w-6 cursor-pointer">
                         </a>
                     </div>
                 </div>                       
