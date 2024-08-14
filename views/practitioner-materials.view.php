@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Practitioner</title>
+    <title>Health Practitioner | Learning Materials</title>
     <link rel="stylesheet" href="./public/tailwind/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -27,11 +27,11 @@
                     </div>
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
-                    <div class="flex flex-col gap-2 mt-5 justify-center sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded bg-gray-100">
+                    <div class="flex flex-col gap-2 mt-5 justify-start sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
+                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
                             <a href="/ecares-final/practitioner" class="">Home</a>                          
                         </div>
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
+                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded bg-gray-100">
                             <a href="/ecares-final/practitioner-materials" class="">Learning Materials</a>                          
                         </div>
                         <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
@@ -83,8 +83,21 @@
         </header>
     </div>
     
-    <div class="container max-w-screen-2xl xl:px-5 px-2 font-sans">
-        <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 xl:py-8 py-5">
+    <div class="container max-w-screen-2xl xl:px-5 px-2 py-3 font-sans">
+        <ol class="flex items-center whitespace-nowrap my-3">
+            <li class="inline-flex items-center">
+                <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/ecares-final/practitioner">
+                Home
+                </a>
+                <svg class="shrink-0 mx-2 size-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"></path>
+                </svg>
+            </li>
+            <li class="inline-flex items-center text-sm font-semibold text-gray-800 truncate" aria-current="page">
+                Learning Materials
+            </li>
+        </ol>
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 xl:pb-5 pt-2 pb-5">
             <div class="flex flex-col group bg-white border shadow-sm rounded-md overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition dark:bg-sky-950 dark:border-0 dark:shadow-neutral-700/70" href="#">
                 <div class="rounded-t-md overflow-hidden border">
                     <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="facility-pin-modal" data-hs-overlay="#facility-pin-modal">
@@ -92,68 +105,29 @@
                     </a>
                 </div>
                 <div class="py-3 px-3 flex justify-between w-full items-center">
-                    <div class="flex flex-col items-center">
-                        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">Facility Name 1</h2>
-                        <p class="text-sm text-gray-500 dark:text-neutral-400">Cauayan City, Isabela</p>
+                    <div class="flex flex-col items-start justify-center">
+                        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">Topic Title</h2>
+                        <p class="text-sm text-gray-500 dark:text-neutral-400">Week 1</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
-                        <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-facility-modal" data-hs-overlay="#edit-facility-modal">
+                        <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-topic-modal" data-hs-overlay="#edit-topic-modal">
                             <img src="./public/img/edit.png"  alt="Edit" class="w-6">
                         </a>
                     </div>
                 </div>                       
             </div>
 
-            <!-- Facilitin Pin Modal -->
-            <div id="facility-pin-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="facility-pin-label">
-                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
-                        <div class="flex justify-between items-center py-3 px-4">
-                            <h3 id="facility-pin-label" class="font-bold text-gray-800 dark:text-gray-300">
-                                
-                            </h3>
-                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#facility-pin-modal">
-                            <span class="sr-only">Close</span>
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 6 6 18"></path>
-                                <path d="m6 6 12 12"></path>
-                            </svg>
-                            </button>
-                        </div>
+            <img src="./public/img/create.png" alt="create" class="w-10 fixed right-0 bottom-0 z-10 mr-8 mb-8 cursor-pointer drop-shadow-2xl" aria-haspopup="dialog" aria-expanded="false" aria-controls="add-material-modal" data-hs-overlay="#add-material-modal">
 
-                        <div class="py-3 flex justify-center flex-col items-center">
-                            <h3 class="mb-2 dark:text-white">Enter Facility Pin</h3>
-                            <div class="flex gap-x-3" data-hs-pin-input="">
-                                <input type="text" class="block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="" autofocus="">
-                                <input type="text" class="block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                                <input type="text" class="block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                                <input type="text" class="block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                            </div>
-
-                            <div class="message-response">
-
-                            </div>
-                        </div>
-                    
-                        <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
-                            <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
-                            Submit
-                            </button>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-             <!-- Edit Facility Modal -->
-             <div id="edit-facility-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-facility-label">
+            <!-- Add Material Modal -->
+            <div id="add-material-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="add-material-label">
                 <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
                     <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
                         <div class="flex justify-between items-center py-3 px-4">
-                            <h3 id="edit-facility-label" class="font-bold text-gray-800 dark:text-gray-300">
+                            <h3 id="add-material-label" class="font-bold text-gray-800 dark:text-gray-300">
                                 
                             </h3>
-                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#edit-facility-modal">
+                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#add-material-modal">
                             <span class="sr-only">Close</span>
                             <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 6 6 18"></path>
@@ -163,7 +137,7 @@
                         </div>
 
                         <div class="py-3 flex flex-col items-start px-10">
-                            <h3 class="mb-2 dark:text-white text-lg">Edit Facility Details</h3>
+                            <h3 class="mb-2 dark:text-white text-lg">Add Topic Details</h3>
                             <div data-hs-file-upload='{
                             "url": "/ecares-final/upload",
                             "acceptedFiles": "image/*",
@@ -203,8 +177,82 @@
                                 </div>
                             </div>
 
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Facility Name">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Facility Address">
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Topic Title">
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Week Number">
+                           
+                            <div class="message-response">
+
+                            </div>
+                        </div>
+                    
+                        <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
+                            <input type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer" value="Submit">                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Edit Topic Modal -->
+             <div id="edit-topic-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-topic-label">
+                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
+                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
+                        <div class="flex justify-between items-center py-3 px-4">
+                            <h3 id="edit-topic-label" class="font-bold text-gray-800 dark:text-gray-300">
+                                
+                            </h3>
+                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#edit-topic-modal">
+                            <span class="sr-only">Close</span>
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                            </button>
+                        </div>
+
+                        <div class="py-3 flex flex-col items-start px-10">
+                            <h3 class="mb-2 dark:text-white text-lg">Edit Topic Details</h3>
+                            <div data-hs-file-upload='{
+                            "url": "/ecares-final/upload",
+                            "acceptedFiles": "image/*",
+                            "maxFiles": 1,
+                            "singleton": true
+                            }' class="mb-5">
+                                <template data-hs-file-upload-preview="">
+                                    <div class="size-20">
+                                    <img class="w-full object-contain rounded-full" data-dz-thumbnail="">
+                                    </div>
+                                </template>
+
+                                <div class="flex flex-wrap items-center gap-3 sm:gap-5">
+                                    <div class="group" data-hs-file-upload-previews="" data-hs-file-upload-pseudo-trigger="">
+                                    <span class="group-has-[div]:hidden flex shrink-0 justify-center items-center size-20 border-2 border-dotted border-gray-300 text-gray-400 cursor-pointer rounded-full hover:bg-gray-50">
+                                        <svg class="shrink-0 size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                        <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
+                                        </svg>
+                                    </span>
+                                    </div>
+
+                                    <div class="grow">
+                                    <div class="flex items-center gap-x-2">
+                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-trigger="">
+                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="17 8 12 3 7 8"></polyline>
+                                            <line x1="12" x2="12" y1="3" y2="15"></line>
+                                        </svg>
+                                        Upload photo
+                                        </button>
+                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-clear="">Delete</button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Topic Title">
+                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Week Number">
                            
                             <div class="message-response">
 
