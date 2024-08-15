@@ -9,7 +9,7 @@
 </head>
 <body class="dark:bg-sky-900 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950 font-sans">
     <div class="dark:bg-sky-950 border shadow">
-        <header class="container relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm xl:px-5 py-3 px-2 dark:bg-sky-950">
+        <header class="sticky top-0 container flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm xl:px-5 py-3 px-2 dark:bg-sky-950">
             <nav class="max-w-screen-2xl w-full mx-auto 2xl:px-0 sm:flex sm:items-center sm:justify-between">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
@@ -28,13 +28,13 @@
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-start sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             <a href="/ecares-final/practitioner" class="">Home</a>                          
                         </div>
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded bg-gray-100">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
                             <a href="/ecares-final/practitioner/learning-materials" class="">Learning Materials</a>                          
                         </div>
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             <a href="mailto:ecares@gmail.com" class="">Contact Administrator</a>                          
                         </div>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
@@ -106,63 +106,66 @@
             </li>
         </ol>
         <div class="flex w-full justify-center items-center flex-col mt-10">
-            <div class="flex items-start w-1/2 mb-3">
+            <div class="flex items-start w-full max-w-3xl mb-3">
             <h2 class="text-2xl">Topic - Week 1</h2>
             </div>
-            <!-- Textarea -->
-            <div class="relative w-1/2 shadow rounded-lg">
-            <textarea id="hs-textarea-ex-2" class="p-4 pb-12 block w-full bg-gray-100 border-gray-200 rounded-lg text-sm focus:border-white focus:ring-white" placeholder="Ask me anything..."></textarea>
+            <!-- Post Form -->
+            <div class="relative w-full max-w-3xl drop-shadow-lg rounded-lg bg-white p-6">
+                <textarea id="post-textarea" class="p-4 block w-full bg-gray-100 border border-gray-300 rounded-lg text-sm focus:border-sky-500 focus:ring-1 focus:ring-sky-500 placeholder-gray-500" placeholder="Post something..."></textarea>
+                
+                <div class="mt-4">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+                        <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+                            <!-- Link Input -->
+                            <div class="flex flex-col">
+                                <input type="text" id="link-input" class="p-2 border border-gray-300 rounded-lg text-sm focus:border-sky-500 focus:ring-1 focus:ring-sky-500 w-full md:w-60" placeholder="Add YouTube or other links">
+                                <button type="button" id="add-link-button" class="mt-2 px-3 py-1 bg-sky-500 text-white rounded-lg hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-500">Add Link</button>
+                            </div>
+                            <!-- File Upload -->
+                            <form id="upload-form" enctype="multipart/form-data" class="flex-shrink-0">
+                                <label for="file-input" class="sr-only">Choose file</label>
+                                <input type="file" name="files[]" id="file-input" class="block w-full border border-gray-300 rounded-lg text-sm file:bg-gray-50 file:border-0 file:py-1 file:px-3 file:text-gray-700 hover:file:bg-gray-100 focus:border-sky-500 focus:ring-1 focus:ring-sky-500" multiple>
+                            </form>
+                        
+                        
+                        </div>
+                        
+                        <!-- Post Button -->
+                        <button type="button" id="post-button" class="mt-4 md:mt-0 inline-flex items-center px-4 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-500">
+                        Post
+                        </button>
+                    </div>
 
-            <!-- Toolbar -->
-            <div class="absolute bottom-px inset-x-px p-2 rounded-b-md bg-gray-100">
-                <div class="flex justify-between items-center">
-                <!-- Button Group -->
-                <div class="flex items-center">
-                    <!-- Mic Button -->
-                    <button type="button" class="inline-flex shrink-0 justify-center items-center size-8 rounded-lg text-gray-500 hover:bg-gray-100 focus:z-10 focus:outline-none focus:bg-gray-100">
-                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="18" height="18" x="3" y="3" rx="2"></rect>
-                        <line x1="9" x2="15" y1="15" y2="9"></line>
-                    </svg>
-                    </button>
-                    <!-- End Mic Button -->
+                    <!-- Links List (initially empty) -->
+                    <ul id="links-list" class="mt-4 space-y-2">
+                        <!-- Links will be dynamically added here -->
+                    </ul>
 
-                    <!-- Attach Button -->
-                    <button type="button" class="inline-flex shrink-0 justify-center items-center size-8 rounded-lg text-gray-500 hover:bg-gray-100 focus:z-10 focus:outline-none focus:bg-gray-100">
-                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                    </svg>
-                    </button>
-                    <!-- End Attach Button -->
-                </div>
-                <!-- End Button Group -->
-
-                <!-- Button Group -->
-                <div class="flex items-center gap-x-1">
-                    <!-- Mic Button -->
-                    <button type="button" class="inline-flex shrink-0 justify-center items-center size-8 rounded-lg text-gray-500 hover:bg-gray-100 focus:z-10 focus:outline-none focus:bg-gray-100">
-                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                        <line x1="12" x2="12" y1="19" y2="22"></line>
-                    </svg>
-                    </button>
-                    <!-- End Mic Button -->
-
-                    <!-- Send Button -->
-                    <button type="button" class="inline-flex shrink-0 justify-center items-center size-8 rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:z-10 focus:outline-none focus:bg-blue-500">
-                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"></path>
-                    </svg>
-                    </button>
-                    <!-- End Send Button -->
-                </div>
-                <!-- End Button Group -->
+                    <!-- Error Message (hidden initially) -->
+                   
+                    <div id="error-message" class="bg-red-50 border border-red-500 p-2 dark:bg-red-800/30 rounded-lg hidden" role="alert" tabindex="-1" aria-labelledby="hs-bordered-red-style-label">
+                        <div class="flex items-center">
+                            <div class="shrink-0">
+                                <!-- Icon -->
+                                <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-red-100 bg-red-200 text-red-800 dark:border-red-900 dark:bg-red-800 dark:text-red-400">
+                                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 6 6 18"></path>
+                                    <path d="m6 6 12 12"></path>
+                                </svg>
+                                </span>
+                                <!-- End Icon -->
+                            </div>
+                            <div class="ms-3">
+                                <h3 id="error-text" class="font-semibold text-red-800">
+                                Please fill out the required fields.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- End Toolbar -->
-            </div>
-            <!-- End Textarea -->
+
+
 
             <!-- Edit Health Practitioner Profile Modal -->
             <div id="edit-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-profile-label">
@@ -247,38 +250,11 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../public/javascript/darkmode.js"></script>
     <script src="../node_modules/preline/dist/preline.js"></script>
     <script src="../node_modules/lodash/lodash.min.js"></script>
     <script src="../node_modules/dropzone/dist/dropzone-min.js"></script>
-    <script>
-  (function () {
-    function textareaAutoHeight(el, offsetTop = 0) {
-      el.style.height = 'auto';
-      el.style.height = `${el.scrollHeight + offsetTop}px`;
-    }
-
-    (function () {
-      const textareas = [
-        '#hs-textarea-ex-2'
-      ];
-
-      textareas.forEach((el) => {
-        const textarea = document.querySelector(el);
-        const overlay = textarea.closest('.hs-overlay');
-
-        if (overlay) {
-          const { element } = HSOverlay.getInstance(overlay, true);
-
-          element.on('open', () => textareaAutoHeight(textarea, 3));
-        } else textareaAutoHeight(textarea, 3);
-
-        textarea.addEventListener('input', () => {
-          textareaAutoHeight(textarea, 3);
-        });
-      });
-    })();
-  })()
-</script>
+    <script src="../public/javascript/post.js"></script>
 </body>
 </html>

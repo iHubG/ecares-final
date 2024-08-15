@@ -5,5 +5,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "";
 } catch (PDOException $e) {
+    require 'error_database.php';
     die("Connection failed: " . $e->getMessage());
 }
+

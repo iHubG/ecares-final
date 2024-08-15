@@ -28,13 +28,13 @@
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-start sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             <a href="/ecares-final/practitioner" class="">Home</a>                          
                         </div>
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded bg-gray-100">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
                             <a href="/ecares-final/practitioner/learning-materials" class="">Learning Materials</a>                          
                         </div>
-                        <div class="flex justify-center hover:bg-gray-100 px-3 py-3 rounded">
+                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             <a href="mailto:ecares@gmail.com" class="">Contact Administrator</a>                          
                         </div>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
