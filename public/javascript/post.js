@@ -26,11 +26,13 @@ $(document).ready(function() {
   
       // Validate form fields
       if (!postContent && files.length === 0 && links.length === 0) {
+        $('#success-message').addClass('hidden');
         $('#error-message').removeClass('hidden');
         $('#error-text').text('Please fill out the required fields.');
         return; // Stop form submission
       } else {
         $('#error-message').addClass('hidden');
+        $('#success-message').removeClass('hidden');
       }
   
       // Prepare form data
@@ -56,6 +58,11 @@ $(document).ready(function() {
           $('#post-textarea').val('');
           $('#links-list').empty();
           $('#file-input').val('');
+
+          // Reload the page after a short delay (e.g., 1 second)
+          setTimeout(function() {
+            location.reload(); // Reload the current page
+          }, 1000);
         },
         error: function(xhr, status, error) {
           console.error('Error:', error);
