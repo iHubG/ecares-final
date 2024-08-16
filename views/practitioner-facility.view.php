@@ -157,7 +157,7 @@
                             </button>
                         </div>
                         
-                        <form action="../controller/practitioner-sendEmail.php" method="post">
+                        <form method="post" id="emailForm">
                             <div class="py-3 flex flex-col items-start px-10">
                                 <h3 class="mb-3 dark:text-white text-lg">Send Email</h3>
 
@@ -165,14 +165,52 @@
                                 <input type="text" name="recipient-name" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Recipient Name" autocomplete="off" required>
                                 <input type="text" name="subject" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Subject" autocomplete="off" required>
                                 <textarea name="message" id="message" class="py-2 px-4 block w-full border-gray-200 rounded-md" placeholder="Message" autocomplete="off" required></textarea>
-                            
-                                <div class="message-response">
-
-                                </div>
                             </div>
                         
                             <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
-                                <input type="submit" name="send-email" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer" value="Send Mail">                           
+                                <button type="submit" name="sendEmailButton" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer">Send Mail</button>                           
+                            </div>
+
+                              <!-- Success Message (hidden initially) -->
+                              <div id="success-message" class="bg-teal-50 border border-teal-500 rounded-lg p-2 dark:bg-teal-800/30 hidden" role="alert" tabindex="-1" aria-labelledby="hs-bordered-success-style-label">
+                                <div class="flex items-center">
+                                    <div class="shrink-0">
+                                        <!-- Icon -->
+                                        <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-teal-100 bg-teal-200 text-teal-800 dark:border-teal-900 dark:bg-teal-800 dark:text-teal-400">
+                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                            <path d="m9 12 2 2 4-4"></path>
+                                        </svg>
+                                        </span>
+                                        <!-- End Icon -->
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 id="hs-bordered-success-style-label" class="text-teal-800 font-semibold dark:text-white">
+                                        Success.
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Error Message (hidden initially) -->
+                            <div id="error-message" class="bg-red-50 border border-red-500 p-2 dark:bg-red-800/30 rounded-lg hidden" role="alert" tabindex="-1" aria-labelledby="hs-bordered-red-style-label">
+                                <div class="flex items-center">
+                                    <div class="shrink-0">
+                                        <!-- Icon -->
+                                        <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-red-100 bg-red-200 text-red-800 dark:border-red-900 dark:bg-red-800 dark:text-red-400">
+                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 6 6 18"></path>
+                                            <path d="m6 6 12 12"></path>
+                                        </svg>
+                                        </span>
+                                        <!-- End Icon -->
+                                    </div>
+                                    <div class="ms-3">
+                                        <h3 id="error-text" class="font-semibold text-red-800">
+                                        Please fill out the required fields.
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -266,6 +304,8 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../public/javascript/sendEmail.js"></script>
     <script src="../public/javascript/darkmode.js"></script>
     <script src="../node_modules/preline/dist/preline.js"></script>
     <script src="../node_modules/lodash/lodash.min.js"></script>
