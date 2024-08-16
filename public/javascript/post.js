@@ -63,6 +63,7 @@ $(document).ready(function() {
           setTimeout(function() {
             location.reload(); // Reload the current page
           }, 1000);
+
         },
         error: function(xhr, status, error) {
           console.error('Error:', error);

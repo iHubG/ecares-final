@@ -14,6 +14,7 @@
         '/ecares-final/practitioner' => 'practitioner',
         '/ecares-final/practitioner/learning-materials' => 'practitioner-materials',
         '/ecares-final/practitioner/learning-content' => 'practitioner-content',
+        '/ecares-final/practitioner/facility' => 'practitioner-facility',
         '/ecares-final/mother-login' => 'mother-login',
         '/ecares-final/mother-signup' => 'mother-signup',
     ];
@@ -63,6 +64,9 @@
                 break;
             case 'practitioner-content':
                 require "./views/practitioner-learning-content.view.php";
+                break;
+            case 'practitioner-facility':
+                require "./views/practitioner-facility.view.php";
                 break;
             case 'mother-login':
                 require "./views/mother-login.view.php";

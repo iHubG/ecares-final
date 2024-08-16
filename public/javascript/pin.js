@@ -27,7 +27,7 @@ $(document).ready(function() {
 
         // Send AJAX request
         $.ajax({
-            url: './post.php', // Replace with your server endpoint
+            url: './controller/practitioner-validatePin.php', // Replace with your server endpoint
             type: 'POST',
             data: formData,
             dataType: 'json', // Expecting JSON response
@@ -53,11 +53,8 @@ $(document).ready(function() {
                 
                 $('#success-message').removeClass('hidden');
                 $('#error-message').addClass('hidden');
-
-                 // Reload the page after a short delay (e.g., 1 second)
-                 setTimeout(function() {
-                    location.reload(); // Reload the current page
-                }, 1000);
+              
+                window.location.href = '/ecares-final/practitioner/facility'
             },
             error: function(xhr, status, error) {
                 console.error('Error:', error);
