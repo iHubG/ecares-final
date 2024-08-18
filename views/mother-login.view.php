@@ -17,7 +17,7 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">Sign in for eCARES</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Postpartum Mother</h2>
-            <form action="">
+            <form action="/ecares-final/mother" method="post">
                 <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border focus:border-rose-500 focus:ring-rose-500 2xl:text-lg text-base mb-5" placeholder="Phone">
                 <div class="relative mb-3">
                     <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base focus:border-rose-500 focus:ring-rose-500" placeholder="Password">

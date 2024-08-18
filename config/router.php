@@ -17,6 +17,7 @@
         '/ecares-final/practitioner/facility' => 'practitioner-facility',
         '/ecares-final/mother-login' => 'mother-login',
         '/ecares-final/mother-signup' => 'mother-signup',
+        '/ecares-final/mother' => 'mother',
     ];
 
     $url = $_SERVER['REQUEST_URI'];
@@ -73,6 +74,9 @@
                 break;
             case 'mother-signup':
                 require "./views/mother-signup.view.php";
+                break;
+            case 'mother':
+                require "./views/mother-interface.view.php";
                 break;
             default:
                 echo "<h2 class='text-center text-4xl text-gray-500 mt-5'> 404 Page Not Found </h2>";
