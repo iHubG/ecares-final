@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="../public/img/ecares.png" alt="ecares" class="w-9">
-                        <a class="flex-none text-xl dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/practitioner" aria-label="Brand">
+                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/practitioner" aria-label="Brand">
                         Health Practitioner
                         </a>
                     </div>              
@@ -28,15 +28,15 @@
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-start sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
-                            <a href="/ecares-final/practitioner" class="">Home</a>                          
-                        </div>
-                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
-                            <a href="/ecares-final/practitioner/learning-materials" class="">Learning Materials</a>                          
-                        </div>
-                        <div class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
-                            <a href="mailto:ecares@gmail.com" class="">Contact Administrator</a>                          
-                        </div>
+                        <a href="/ecares-final/practitioner" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
+                            Home                         
+                        </a>
+                        <a href="/ecares-final/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
+                            Learning Materials                          
+                        </a>
+                        <a href="mailto:ecares@gmail.com" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
+                            Contact Administrator                          
+                        </a>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
                             <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle flex justify-center items-center size-9 border-none text-sm font-semibold rounded-full border-0 border-gray-200  text-gray-800 shadow-sm focus:outline-none  disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:border-sky-950 dark:text-white dark:hover:bg-sky-950 dark:focus:bg-sky-950 hover:bg-gray-200" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                                 <img src="../public/img/avatar.png" alt="avatar" class="w-8">  

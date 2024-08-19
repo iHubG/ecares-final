@@ -1,3 +1,7 @@
+<?php
+// Assume $userStartDate is obtained from the database or user profile
+$userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +18,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="./public/img/ecares.png" alt="ecares" class="w-9">
-                        <a class="flex-none text-xl dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/mother">
+                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/mother">
                         Postpartum Mother
                         </a>
                     </div>             
@@ -90,7 +94,7 @@
     
     <div class="container max-w-screen-2xl xl:px-5 px-2 py-5 font-sans">
         <div class="w-full">
-            <h3 class="text-lg font-medium text-gray-600 text-center">Day 1 of 42 Days</h3>
+            <h3 id="postpartumDay" data-start-date="<?php echo $userStartDate; ?>" class="text-lg font-medium text-gray-600 text-center"></h3>
         </div> 
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 xl:py-8 py-5">
             <div class="flex flex-col group bg-white border shadow-sm rounded-md overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition dark:bg-sky-950 dark:border-0 dark:shadow-neutral-700/70" href="#">
@@ -354,6 +358,7 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./public/javascript/pin.js"></script>
+    <script src="./public/javascript/day.js"></script>
     <script src="./public/javascript/darkmode.js"></script>
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="./node_modules/lodash/lodash.min.js"></script>
