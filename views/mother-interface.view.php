@@ -99,7 +99,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 xl:py-8 py-5">
             <div class="flex flex-col group bg-white border shadow-sm rounded-md overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition dark:bg-sky-950 dark:border-0 dark:shadow-neutral-700/70" href="#">
                 <div class="rounded-t-md overflow-hidden border">
-                    <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="facility-pin-modal" data-hs-overlay="#facility-pin-modal">
+                    <a class="cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="facility-pin-modal" data-hs-overlay="#facility-pin-modal">
                         <img class="size-contain object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-md" src="./public/img/smartphone.jpg" alt="Card Image">
                     </a>
                 </div>
