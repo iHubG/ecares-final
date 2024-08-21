@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="../public/img/ecares.png" alt="ecares" class="w-9">
-                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/practitioner" aria-label="Brand">
+                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/practitioner" aria-label="Brand">
                         Health Practitioner
                         </a>
                     </div>              
@@ -28,10 +28,10 @@
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-start sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <a href="/ecares-final/practitioner" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
+                        <a href="/practitioner" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             Home                         
                         </a>
-                        <a href="/ecares-final/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
+                        <a href="/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
                             Learning Materials                          
                         </a>
                         <a href="mailto:ecares@gmail.com" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
@@ -46,7 +46,7 @@
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
                                 Profile
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/ecares-final/practitioner-login">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/practitioner-login">
                                 Sign out
                                 </a>
                             </div>
@@ -86,7 +86,7 @@
     <div class="container max-w-screen-2xl xl:px-5 px-2 py-3 font-sans">
         <ol class="flex items-center whitespace-nowrap my-3">
             <li class="inline-flex items-center">
-                <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/ecares-final/practitioner">
+                <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/practitioner">
                 Home
                 </a>
                 <svg class="shrink-0 mx-2 size-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -94,7 +94,7 @@
                 </svg>
             </li>
             <li class="inline-flex items-center">
-                <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/ecares-final/practitioner/learning-materials">
+                <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/practitioner/learning-materials">
                 Learning Materials
                 </a>
                 <svg class="shrink-0 mx-2 size-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -207,7 +207,7 @@
                         <div class="py-3 flex flex-col items-start px-10">
                             <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
                             <div data-hs-file-upload='{
-                            "url": "/ecares-final/upload",
+                            "url": "/upload",
                             "acceptedFiles": "image/*",
                             "maxFiles": 1,
                             "singleton": true

@@ -1,23 +1,25 @@
 <?php
     
     $routes = [ 
-        '/ecares-final/' => 'index',
-        '/ecares-final/admin-login' => 'admin-login',
-        '/ecares-final/admin-dashboard' => 'admin-dashboard',
-        '/ecares-final/admin-facilities' => 'admin-facilities',
-        '/ecares-final/admin-practitioners' => 'admin-practitioners',
-        '/ecares-final/admin-mothers' => 'admin-mothers',
-        '/ecares-final/admin-logs' => 'admin-logs',
-        '/ecares-final/admin-backup' => 'admin-backup',
-        '/ecares-final/practitioner-login' => 'practitioner-login',
-        '/ecares-final/practitioner-signup' => 'practitioner-signup',
-        '/ecares-final/practitioner' => 'practitioner',
-        '/ecares-final/practitioner/learning-materials' => 'practitioner-materials',
-        '/ecares-final/practitioner/learning-content' => 'practitioner-content',
-        '/ecares-final/practitioner/facility' => 'practitioner-facility',
-        '/ecares-final/mother-login' => 'mother-login',
-        '/ecares-final/mother-signup' => 'mother-signup',
-        '/ecares-final/mother' => 'mother',
+        '/' => 'index',
+        '/admin-login' => 'admin-login',
+        '/admin-dashboard' => 'admin-dashboard',
+        '/admin-facilities' => 'admin-facilities',
+        '/admin-practitioners' => 'admin-practitioners',
+        '/admin-mothers' => 'admin-mothers',
+        '/admin-logs' => 'admin-logs',
+        '/admin-backup' => 'admin-backup',
+        '/practitioner-login' => 'practitioner-login',
+        '/practitioner-signup' => 'practitioner-signup',
+        '/practitioner' => 'practitioner',
+        '/practitioner/learning-materials' => 'practitioner-materials',
+        '/practitioner/learning-content' => 'practitioner-content',
+        '/practitioner/facility' => 'practitioner-facility',
+        '/mother-login' => 'mother-login',
+        '/mother-signup' => 'mother-signup',
+        '/mother' => 'mother',
+        '/mother/community' => 'mother-community',
+        '/mother/report' => 'mother-report',
     ];
 
     $url = $_SERVER['REQUEST_URI'];
@@ -77,6 +79,12 @@
                 break;
             case 'mother':
                 require "./views/mother-interface.view.php";
+                break;
+            case 'mother-community':
+                require "./views/mother-community.view.php";
+                break;
+            case 'mother-report':
+                require "./views/mother-report.view.php";
                 break;
             default:
                 echo "<h2 class='text-center text-4xl text-gray-500 mt-5'> 404 Page Not Found </h2>";

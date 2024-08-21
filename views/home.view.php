@@ -14,9 +14,9 @@
             <div class="flex justify-center mb-6">
                 <img src="./public/img/ecares.png" alt="ecares" class="md:w-32 w-28 text-center"/>
             </div>
-            <a href="/ecares-final/admin-login" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Admin</a>
-            <a href="/ecares-final/practitioner-login" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Health Practitioner</a>
-            <a href="/ecares-final/mother-login" class="bg-rose-500 hover:bg-rose-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Postpartum Mother</a>
+            <a href="/admin-login" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Admin</a>
+            <a href="/practitioner-login" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Health Practitioner</a>
+            <a href="/mother-login" class="bg-rose-500 hover:bg-rose-700 2xl:p-3 p-2 2xl:mb-6 mb-4 text-center 2xl:text-lg text-base rounded-xl text-white">Postpartum Mother</a>
         </div>
     </div>
     <script src="./node_modules/preline/dist/preline.js"></script>

@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
+    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/">
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Back to home
     </a>
@@ -52,14 +52,14 @@
                 </div>
            
                 <p class="text-center 2xl:text-sm text-xs mb-3">By signing up, you agree to 
-                    <a href="/ecares-final/terms" class="text-sky-500">eCARE's terms</a>
+                    <a href="/terms" class="text-sky-500">eCARE's terms</a>
                     and have read our 
-                    <a href="/ecares-final/privacy-policy" class="text-sky-500">privacy policy.</a>
+                    <a href="/privacy-policy" class="text-sky-500">privacy policy.</a>
                 </p>    
 
                 <input type="submit" class="bg-sky-500 hover:bg-sky-700 2xl:p-3 p-2 text-base mb-6 text-center rounded-xl text-white w-full cursor-pointer" value="Sign Up">
 
-                <p class="text-center 2xl:text-sm text-xs">Have an account? <a href="/ecares-final/practitioner-login" class="text-sky-500">Sign in here</a></p>    
+                <p class="text-center 2xl:text-sm text-xs">Have an account? <a href="/practitioner-login" class="text-sky-500">Sign in here</a></p>    
             </form>
         </div>
     </div>

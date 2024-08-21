@@ -4,7 +4,7 @@
 </head>
 <body>
    <div class="container z-0 sticky left-0 border-r border-gray-200 dark:border-0 dark:drop-shadow-lg dark:bg-sky-950 w-fit px-5 py-5 h-screen font-sans">
-        <a href="/ecares-final/admin-dashboard">
+        <a href="/admin-dashboard">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-dashboard" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap dark:hover:bg-gray-700 mb-2 items-center dash-nav dashboard-link">
@@ -17,7 +17,7 @@
                 </button>
             </div>
         </a>
-        <a href="/ecares-final/admin-facilities">
+        <a href="/admin-facilities">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-facilities" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
@@ -30,7 +30,7 @@
                 </button>
             </div>
         </a>
-        <a href="/ecares-final/admin-practitioners">
+        <a href="/admin-practitioners">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-practitioners" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
@@ -43,7 +43,7 @@
                 </button>
             </div>
         </a>
-        <a href="/ecares-final/admin-mothers">
+        <a href="/admin-mothers">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-mothers" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
@@ -56,7 +56,7 @@
                 </button>
             </div>
         </a>
-        <a href="/ecares-final/admin-logs">
+        <a href="/admin-logs">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-logs" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">
@@ -69,7 +69,7 @@
                 </button>
             </div>
         </a>
-        <a href="/ecares-final/admin-backup">
+        <a href="/admin-backup">
             <div class="hs-tooltip [--placement:right]">
                 <button type="button" class="hs-tooltip-toggle">
                     <div id="navContainer" data-path="admin-backup" class="flex gap-2 hover:bg-sky-100 px-2 py-2 rounded w-56 text-nowrap flex-row dark:hover:bg-gray-700 mb-2 items-center dash-nav">

@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-rose-600 focus:outline-none focus:text-rose-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
+    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-rose-600 focus:outline-none focus:text-rose-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/">
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Back to home
     </a>
@@ -17,7 +17,7 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">Sign in for eCARES</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Postpartum Mother</h2>
-            <form action="/ecares-final/mother" method="post">
+            <form action="/mother" method="post">
                 <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border focus:border-rose-500 focus:ring-rose-500 2xl:text-lg text-base mb-5" placeholder="Phone">
                 <div class="relative mb-3">
                     <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base focus:border-rose-500 focus:ring-rose-500" placeholder="Password">
@@ -47,7 +47,7 @@
 
                 <input type="submit" class="bg-rose-500 hover:bg-rose-700 2xl:p-3 p-2 mb-6 text-center text-base rounded-xl text-white w-full cursor-pointer" value="Sign In">
 
-                <p class="text-center 2xl:text-sm text-xs">Dont have an account? <a href="/ecares-final/mother-signup" class="text-rose-500">Sign up here</a></p>    
+                <p class="text-center 2xl:text-sm text-xs">Dont have an account? <a href="/mother-signup" class="text-rose-500">Sign up here</a></p>    
             </form>
         </div>
     </div>

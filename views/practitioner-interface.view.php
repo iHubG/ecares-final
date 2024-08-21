@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="./public/img/ecares.png" alt="ecares" class="w-9">
-                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/practitioner" aria-label="Brand">
+                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/practitioner" aria-label="Brand">
                         Health Practitioner
                         </a>
                     </div>              
@@ -28,10 +28,10 @@
                 </div>
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-center sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <a href="/ecares-final/practitioner" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
+                        <a href="/practitioner" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded bg-sky-100">
                            Home                          
                         </a>
-                        <a href="/ecares-final/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
+                        <a href="/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             Learning Materials                         
                         </a>
                         <a href="mailto:ecares@gmail.com" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
@@ -46,7 +46,7 @@
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
                                 Profile
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/ecares-final/practitioner-login">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/practitioner-login">
                                 Sign out
                                 </a>
                             </div>
@@ -87,8 +87,8 @@
         <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 xl:py-8 py-5">
             <div class="flex flex-col group bg-white border shadow-sm rounded-md overflow-hidden hover:shadow-lg focus:outline-none focus:shadow-lg transition dark:bg-sky-950 dark:border-0 dark:shadow-neutral-700/70" href="#">
                 <div class="rounded-t-md overflow-hidden border">
-                    <a href="#" aria-haspopup="dialog" aria-expanded="false" aria-controls="facility-pin-modal" data-hs-overlay="#facility-pin-modal">
-                        <img class="size-contain object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-md" src="./public/img/smartphone.jpg" alt="Card Image">
+                    <a aria-haspopup="dialog" aria-expanded="false" aria-controls="facility-pin-modal" data-hs-overlay="#facility-pin-modal">
+                        <img class="size-contain object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-t-md cursor-pointer" src="./public/img/smartphone.jpg" alt="Card Image">
                     </a>
                 </div>
                 <div class="py-3 px-3 flex justify-between w-full items-center">
@@ -204,7 +204,7 @@
                         <div class="py-3 flex flex-col items-start px-10">
                             <h3 class="mb-2 dark:text-white text-lg">Edit Facility Details</h3>
                             <div data-hs-file-upload='{
-                            "url": "/ecares-final/upload",
+                            "url": "/upload",
                             "acceptedFiles": "image/*",
                             "maxFiles": 1,
                             "singleton": true
@@ -277,7 +277,7 @@
                         <div class="py-3 flex flex-col items-start px-10">
                             <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
                             <div data-hs-file-upload='{
-                            "url": "/ecares-final/upload",
+                            "url": "/upload",
                             "acceptedFiles": "image/*",
                             "maxFiles": 1,
                             "singleton": true

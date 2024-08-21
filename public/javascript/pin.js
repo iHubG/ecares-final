@@ -54,7 +54,7 @@ $(document).ready(function() {
                 $('#success-message').removeClass('hidden');
                 $('#error-message').addClass('hidden');
               
-                window.location.href = '/ecares-final/practitioner/facility'
+                window.location.href = '/practitioner/facility'
             },
             error: function(xhr, status, error) {
                 console.error('Error:', error);

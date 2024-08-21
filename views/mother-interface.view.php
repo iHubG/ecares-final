@@ -18,7 +18,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
                         <img src="./public/img/ecares.png" alt="ecares" class="w-9">
-                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/ecares-final/mother">
+                        <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/mother">
                         Postpartum Mother
                         </a>
                     </div>             
@@ -34,16 +34,16 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                 
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-center sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <a href="/ecares-final/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded bg-rose-100">
+                        <a href="/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded bg-rose-100">
                             Home                         
                         </a>
-                        <a href="/ecares-final/mother/community" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
+                        <a href="/mother/community" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
                             Community                         
                         </a>
-                        <a href="/ecares-final/mother/report" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
+                        <a href="/mother/report" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
                             Report                         
                         </a>
-                        <a href="/ecares-final/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
+                        <a href="/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
                             Help                         
                         </a>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
@@ -55,7 +55,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
                                 Profile
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/ecares-final/mother-login">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/mother-login">
                                 Sign out
                                 </a>
                             </div>
@@ -104,9 +104,9 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                     </a>
                 </div>
                 <div class="py-3 px-3 flex justify-between w-full items-center">
-                    <div class="flex flex-col items-center">
-                        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">Facility Name 1</h2>
-                        <p class="text-sm text-gray-500 dark:text-neutral-400">Cauayan City, Isabela</p>
+                    <div class="flex flex-col items-start justify-start">
+                        <h2 class="text-lg font-semibold text-gray-800 dark:text-white">Topic Title</h2>
+                        <p class="text-sm text-gray-500 dark:text-neutral-400">Week 1</p>
                     </div>
                     <div class="flex flex-col items-center gap-2">
                         <a class="hover:bg-gray-200 p-1 rounded-full" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-facility-modal" data-hs-overlay="#edit-facility-modal">
@@ -115,88 +115,6 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                     </div>
                 </div>                       
             </div>
-
-            <!-- Facilitin Pin Modal -->
-            <div id="facility-pin-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="facility-pin-label">
-                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
-                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
-                        <div class="flex justify-between items-center py-3 px-4">
-                            <h3 id="facility-pin-label" class="font-bold text-gray-800 dark:text-gray-300">
-                                
-                            </h3>
-                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#facility-pin-modal">
-                            <span class="sr-only">Close</span>
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M18 6 6 18"></path>
-                                <path d="m6 6 12 12"></path>
-                            </svg>
-                            </button>
-                        </div>
-                        <form method="post" class="px-2 pb-2" id="pin-form">
-                            <div class="py-3 flex justify-center flex-col items-center">
-                                <h3 class="mb-2 dark:text-white">Enter Facility Pin</h3>
-                                <div class="flex gap-x-3" data-hs-pin-input="">
-                                    <input type="text" name="pin1" class="pin-field block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="" autofocus="">
-                                    <input type="text" name="pin2" class="pin-field block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                                    <input type="text" name="pin3" class="pin-field block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                                    <input type="text" name="pin4" class="pin-field block w-[38px] text-center border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0" data-hs-pin-input-item="">
-                                </div>
-                            </div>
-                        
-                            <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
-                                <button id="submit-pin" type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
-                                Submit
-                                </button>                            
-                            </div>
-
-                            <!-- Success Message (hidden initially) -->
-                            <div id="success-message" class="bg-teal-50 border border-teal-500 rounded-lg p-2 dark:bg-teal-800/30 hidden" role="alert" tabindex="-1" aria-labelledby="hs-bordered-success-style-label">
-                                <div class="flex items-center">
-                                    <div class="shrink-0">
-                                        <!-- Icon -->
-                                        <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-teal-100 bg-teal-200 text-teal-800 dark:border-teal-900 dark:bg-teal-800 dark:text-teal-400">
-                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
-                                            <path d="m9 12 2 2 4-4"></path>
-                                        </svg>
-                                        </span>
-                                        <!-- End Icon -->
-                                    </div>
-                                    <div class="ms-3">
-                                        <h3 id="hs-bordered-success-style-label" class="text-teal-800 font-semibold dark:text-white">
-                                        Success.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Error Message (hidden initially) -->
-                            <div id="error-message" class="bg-red-50 border border-red-500 p-2 dark:bg-red-800/30 rounded-lg hidden" role="alert" tabindex="-1" aria-labelledby="hs-bordered-red-style-label">
-                                <div class="flex items-center">
-                                    <div class="shrink-0">
-                                        <!-- Icon -->
-                                        <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-red-100 bg-red-200 text-red-800 dark:border-red-900 dark:bg-red-800 dark:text-red-400">
-                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M18 6 6 18"></path>
-                                            <path d="m6 6 12 12"></path>
-                                        </svg>
-                                        </span>
-                                        <!-- End Icon -->
-                                    </div>
-                                    <div class="ms-3">
-                                        <h3 id="error-text" class="font-semibold text-red-800">
-                                        Please fill out the required fields.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-            
 
             <!-- Edit Health Practitioner Profile Modal -->
             <div id="edit-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-profile-label">
@@ -218,7 +136,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                         <div class="py-3 flex flex-col items-start px-10">
                             <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
                             <div data-hs-file-upload='{
-                            "url": "/ecares-final/upload",
+                            "url": "/upload",
                             "acceptedFiles": "image/*",
                             "maxFiles": 1,
                             "singleton": true

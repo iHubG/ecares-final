@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/ecares-final/">
+    <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="/">
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Back to home
     </a>
@@ -18,7 +18,7 @@
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">Sign in for eCARES</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium">as</h2>
             <h2 class="text-center 2xl:text-2xl text-xl font-medium mb-6">Admin</h2>
-            <form action="/ecares-final/admin-dashboard" method="post">
+            <form action="/admin-dashboard" method="post">
                 <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border focus:border-sky-500 focus:ring-sky-500 2xl:text-lg text-base mb-5" placeholder="Username">
                 <div class="relative mb-3">
                     <input id="hs-toggle-password" type="password" class="py-2 px-4 pe-10 block border w-full border-gray-200 rounded-lg 2xl:text-lg text-base focus:border-sky-500 focus:ring-sky-500" placeholder="Password">

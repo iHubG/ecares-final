@@ -132,7 +132,7 @@
                         <div class="py-3 flex flex-col items-start px-10">
                             <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
                             <div data-hs-file-upload='{
-                            "url": "/ecares-final/upload",
+                            "url": "/upload",
                             "acceptedFiles": "image/*",
                             "maxFiles": 1,
                             "singleton": true
