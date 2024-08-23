@@ -890,6 +890,10 @@ select {
   z-index: 80;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -2684,6 +2688,14 @@ select {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 }
 

@@ -52,7 +52,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                             </button>
 
                             <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 dark:bg-sky-950 dark:border-0 dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-mother-profile-modal" data-hs-overlay="#edit-mother-profile-modal">
                                 Profile
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/mother-login">
@@ -116,15 +116,15 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                 </div>                       
             </div>
 
-            <!-- Edit Health Practitioner Profile Modal -->
-            <div id="edit-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-profile-label">
-                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
-                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
-                        <div class="flex justify-between items-center py-3 px-4">
-                            <h3 id="edit-profile-label" class="font-bold text-gray-800 dark:text-gray-300">
-                                
+            <!-- Edit Postpartum Mother Profile Modal -->
+            <div id="edit-mother-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-mother-profile-label">
+                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-10 opacity-0 transition-all max-w-full max-h-full h-full m-2 xl:m-5">
+                    <div class="flex flex-col bg-gray-200 pointer-events-auto xl:max-w-screen-2xl 2xl:max-h-[90vh] h-full dark:bg-neutral-800 mx-auto rounded-xl">
+                        <div class="flex justify-between items-center py-3 px-4 dark:border-neutral-700">
+                            <h3 id="edit-mother-profile-label" class="font-bold text-gray-800 dark:text-white">
+                            
                             </h3>
-                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#edit-profile-modal">
+                            <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:text-neutral-400 dark:focus:bg-neutral-600" aria-label="Close" data-hs-overlay="#edit-mother-profile-modal">
                             <span class="sr-only">Close</span>
                             <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M18 6 6 18"></path>
@@ -132,73 +132,105 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                             </svg>
                             </button>
                         </div>
-
-                        <div class="py-3 flex flex-col items-start px-10">
-                            <h3 class="mb-2 dark:text-white text-lg">Profile</h3>
-                            <div data-hs-file-upload='{
-                            "url": "/upload",
-                            "acceptedFiles": "image/*",
-                            "maxFiles": 1,
-                            "singleton": true
-                            }' class="mb-5">
-                                <template data-hs-file-upload-preview="">
-                                    <div class="size-20">
-                                    <img class="w-full object-contain rounded-full" data-dz-thumbnail="">
-                                    </div>
-                                </template>
-
-                                <div class="flex flex-wrap items-center gap-3 sm:gap-5">
-                                    <div class="group" data-hs-file-upload-previews="" data-hs-file-upload-pseudo-trigger="">
-                                    <span class="group-has-[div]:hidden flex shrink-0 justify-center items-center size-20 border-2 border-dotted border-gray-300 text-gray-400 cursor-pointer rounded-full hover:bg-gray-50">
-                                        <svg class="shrink-0 size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <circle cx="12" cy="10" r="3"></circle>
-                                        <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"></path>
-                                        </svg>
-                                    </span>
-                                    </div>
-
-                                    <div class="grow">
-                                    <div class="flex items-center gap-x-2">
-                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-trigger="">
-                                        <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="17 8 12 3 7 8"></polyline>
-                                            <line x1="12" x2="12" y1="3" y2="15"></line>
-                                        </svg>
-                                        Upload photo
-                                        </button>
-                                        <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" data-hs-file-upload-clear="">Delete</button>
-                                    </div>
-                                    </div>
-                                </div>
+                        <div class="px-4 overflow-y-auto">
+                            <h3 class="font-semibold text-gray-700 text-center text-lg mb-2">ELECTRONIC MEDICAL RECORD OF POSTPARTUM MOTHER</h3>
+                            <div class="flex w-full justify-end items-center gap-2 mb-2">
+                                <label for="date-of-consultation">1st Date of Consulatation:</label>
+                                <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="August 20, 2024">
                             </div>
-
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Name">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Address">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Position">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Sex">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Age">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Birthdate">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Email">
-                            <input type="text" class="py-2 px-4 block w-full border-gray-200 rounded-md border outline-none dark:bg-sky-950 dark:text-gray-300 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base mb-5" placeholder="Phone Number">
-
-                           
-                            <div class="message-response">
-
+                            <div class="flex w-full justify-start items-center gap-2 mb-2">
+                                <label for="date-of-consultation">Name:</label>
+                                <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="Maria Clara">
                             </div>
+                            <div class="flex w-full justify-start items-center gap-2 mb-2">
+                                <label for="date-of-consultation">Address:</label>
+                                <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="San Fermin, Cauayan City, Isabela">
+                            </div>
+                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 w-1/4">
+                                    <label for="date-of-consultation">Birthday:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="May 2, 1995">
+                                </div> 
+                                <div class="flex items-center gap-2 w-1/4">
+                                    <label for="date-of-consultation">Age:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="29">
+                                </div> 
+                                <div class="flex items-center gap-2 w-1/4">
+                                    <label for="date-of-consultation">Gender:</label>
+                                    <input type="radio" name="gender" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
+                                    <label for="male" class="text-sm text-gray-500 dark:text-neutral-400">M</label>
+                                    <input type="radio" name="gender" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-rose-600 focus:ring-rose-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-rose-500 dark:checked:border-rose-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
+                                    <label for="female" class="text-sm text-gray-500 dark:text-neutral-400">F</label>
+                                </div>  
+                                <div class="flex items-center gap-2 w-1/4">
+                                    <label for="date-of-consultation">Marital Status:</label>
+                                    <input type="radio" name="marital-status" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
+                                    <label for="single" class="text-sm text-gray-500 dark:text-neutral-400">S</label>
+                                    <input type="radio" name="marital-status" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-green-600 focus:ring-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-rose-500 dark:checked:border-rose-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
+                                    <label for="married" class="text-sm text-gray-500 dark:text-neutral-400">M</label>
+                                    <input type="radio" name="marital-status" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-yellow-600 focus:ring-yellow-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-rose-500 dark:checked:border-rose-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
+                                    <label for="widowed" class="text-sm text-gray-500 dark:text-neutral-400">W</label>
+                                </div>    
+                            </div>
+                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 w-1/2">
+                                    <label for="date-of-consultation">Nationality:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="Philippines">
+                                </div> 
+                                <div class="flex items-center gap-2 w-1/2">
+                                    <label for="date-of-consultation">Religion:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="Roman Catholic">
+                                </div> 
+                                
+                            </div>
+                            <div class="flex w-full justify-between items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 w-1/2">
+                                    <label for="date-of-consultation">Educational Attainment:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="College Graduate">
+                                </div> 
+                                <div class="flex items-center gap-2 w-1/2">
+                                    <label for="date-of-consultation">Contact Number:</label>
+                                    <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="09545454545">
+                                </div> 
+                                
+                            </div>
+                            <div class="flex w-full justify-start items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 text-nowrap w-full">
+                                    <label for="date-of-consultation">Occupation:</label>
+                                    <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
+                                </div>                   
+                            </div>
+                            <div class="flex w-full justify-start items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 text-nowrap w-full">
+                                    <label for="date-of-consultation">Reffered By:</label>
+                                    <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
+                                </div>                   
+                            </div>
+                            <div class="flex w-full justify-start items-center gap-5 mb-2">
+                                <div class="flex items-center gap-2 text-nowrap w-full">
+                                    <label for="date-of-consultation">Chief Complaint/s:</label>
+                                    <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
+                                </div>                   
+                            </div>
+                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                                    <label for="date-of-consultation">History of present Illness:</label>
+                                    <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
+                                </div>  
+                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                                    <label for="date-of-consultation">Present Medication/s:</label>
+                                    <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
+                                </div>                 
+                            </div>
+                            <button type="button" class="my-2 py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                            Save changes
+                            </button>
                         </div>
-                    
-                        <div class="flex justify-center items-center gap-x-2 py-3 px-4 ">
-                            <input type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer" value="Update">                           
-                        </div>
+                        
                     </div>
                 </div>
             </div>
-
-           
-
-
+     
 
         </div>
     </div>

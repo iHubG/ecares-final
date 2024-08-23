@@ -42,7 +42,7 @@
                                 <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
                             </button>
 
-                            <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 dark:bg-sky-950 dark:border-0 dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
+                            <div class="hs-dropdown-menu z-50 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 dark:bg-sky-950 dark:border-0 dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
                                 Profile
                                 </a>
@@ -236,7 +236,7 @@
                                 <label for="date-of-consultation">Address:</label>
                                 <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="San Fermin, Cauayan City, Isabela">
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/4">
                                     <label for="date-of-consultation">Birthday:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="May 2, 1995">
@@ -252,7 +252,7 @@
                                     <input type="radio" name="gender" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-rose-600 focus:ring-rose-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-rose-500 dark:checked:border-rose-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
                                     <label for="female" class="text-sm text-gray-500 dark:text-neutral-400">F</label>
                                 </div>  
-                                <div class="flex items-center gap-2 w-1/4">
+                                <div class="flex items-center gap-2 w-1/4 text-nowrap">
                                     <label for="date-of-consultation">Marital Status:</label>
                                     <input type="radio" name="marital-status" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
                                     <label for="single" class="text-sm text-gray-500 dark:text-neutral-400">S</label>
@@ -262,7 +262,7 @@
                                     <label for="widowed" class="text-sm text-gray-500 dark:text-neutral-400">W</label>
                                 </div>    
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/2">
                                     <label for="date-of-consultation">Nationality:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="Philippines">
@@ -273,7 +273,7 @@
                                 </div> 
                                 
                             </div>
-                            <div class="flex w-full justify-between items-center gap-5 mb-2">
+                            <div class="flex w-full justify-between flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/2">
                                     <label for="date-of-consultation">Educational Attainment:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="College Graduate">
@@ -404,7 +404,7 @@
                                     </div>
                                     <div class="ms-3">
                                         <h3 id="hs-bordered-success-style-label" class="text-teal-800 font-semibold dark:text-white">
-                                        Success.
+                                        Success
                                         </h3>
                                     </div>
                                 </div>
@@ -425,7 +425,7 @@
                                     </div>
                                     <div class="ms-3">
                                         <h3 id="error-text" class="font-semibold text-red-800">
-                                        Please fill out the required fields.
+                                        Please fill out the required fields
                                         </h3>
                                     </div>
                                 </div>

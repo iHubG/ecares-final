@@ -42,7 +42,7 @@ try {
     $mail->Port       = $_ENV['SMTP_PORT'] ?? 587;
 
     // Recipients
-    $mail->setFrom('ian@crmsg4.cloud', 'crmsg4.cloud');
+    $mail->setFrom('ecares@ecaresph.com', 'ecaresph.com');
     $mail->addAddress($recipient);
 
     // Content
@@ -77,6 +77,7 @@ try {
                 <p class="text-gray-600">' . htmlspecialchars($message) . '</p>
                 <div class="text-center my-4 text-gray-400">
                     <p>Thank you for using our service!</p>
+                    <p>&copy; 2024 ecaresph.com</p>
                 </div>
             </div>
         </body>
