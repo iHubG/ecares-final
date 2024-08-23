@@ -302,12 +302,12 @@
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>                   
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
-                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-5 mb-2">
+                                <div class="flex items-start justify-start gap-2 flex-col lg:w-1/2 w-full">
                                     <label for="date-of-consultation">History of present Illness:</label>
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>  
-                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                                <div class="flex items-start justify-start gap-2 flex-col lg:w-1/2 w-full">
                                     <label for="date-of-consultation">Present Medication/s:</label>
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>                 

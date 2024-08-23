@@ -37,7 +37,7 @@
                         <img src="./public/img/practitioner.png" alt="monitor" class="w-6">
                         <p id="navText" class="dark:text-gray-300">Health Practitioners</p>
                     </div>
-                    <span id="tooltip" class="hs-tooltip-content invisible hs-tooltip-shown:opacity-100 opacity-0 transition-opacity inline-block absolute z-10 py-1 px-2 bg-sky-100 text-xs font-medium text-gray-700 dark:text-white rounded shadow-sm dark:bg-neutral-700" role="tooltip">
+                    <span id="tooltip" class="z-50 hs-tooltip-content invisible hs-tooltip-shown:opacity-100 opacity-0 transition-opacity inline-block absolute py-1 px-2 bg-sky-100 text-xs font-medium text-gray-700 dark:text-white rounded shadow-sm dark:bg-neutral-700" role="tooltip">
                     Health Practitioners
                     </span>
                 </button>
@@ -83,10 +83,10 @@
             </div>
         </a>
         <div class="flex items-center mt-3 gap-2">
-            <input type="checkbox" id="hs-xs-switch" class="relative w-[35px] h-[21px] bg-gray-100 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-blue-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-blue-600 checked:border-blue-600 focus:checked:border-blue-600 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-600
-            before:inline-block before:size-4 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-neutral-400 dark:checked:before:bg-blue-200">
+            <input type="checkbox" id="hs-xs-switch" class="relative w-[35px] h-[21px] bg-gray-100 border-transparent text-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:ring-blue-600 disabled:opacity-50 disabled:pointer-events-none checked:bg-none checked:text-blue-600 checked:border-blue-600 focus:checked:border-blue-600 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-600 before:inline-block before:size-4 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:rounded-full before:shadow before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-neutral-400 dark:checked:before:bg-blue-200">
             <p id="navText" class="dark:text-gray-300 text-xs">Switch to Icons</p> 
         </div>
+
    </div>
 
    <script>

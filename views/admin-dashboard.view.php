@@ -31,7 +31,7 @@
         <div class="w-auto"><?php include "admin-sidebar.view.php"; ?></div>
         <div id="main-content" class="bg-slate-100 dark:bg-sky-900 w-full">
             <div class="xxl:container py-3 w-full text-wrap h-screen scroll-smooth max-h-screen overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-800 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950">
-                <div class="flex items-center justify-between px-4 pb-5 pt-1">
+                <div class="flex items-center justify-between flex-col lg:flex-row px-4 pb-5 pt-1">
                     <h2 class="text-xl font-medium dark:text-gray-100">Dashboard</h2>
                     <div class="flex">
                         <p class="text-base dark:text-gray-100" id="date"><?php echo $currentDate;?></p>
@@ -40,7 +40,7 @@
                 </div>  
                 <hr class="border-gray-200 dark:border-gray-100">
                 <div class="dashboard-content px-4 py-5">
-                    <div class="grid grid-cols-3 gap-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
                         <div class="shadow rounded border-t border-gray-200 px-5 py-5 bg-white flex items-center justify-between dark:bg-sky-950 dark:border-sky-950">
                             <div class="flex flex-col">
                                 <h2 class="text-base font-medium text-gray-700 dark:text-gray-100">TOTAL USERS</h2>

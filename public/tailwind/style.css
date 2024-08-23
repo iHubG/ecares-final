@@ -910,6 +910,10 @@ select {
   margin: 0.75rem;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1005,6 +1009,10 @@ select {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ms-0 {
+  margin-inline-start: 0px;
 }
 
 .block {
@@ -1221,6 +1229,11 @@ select {
   flex-basis: 100%;
 }
 
+.-translate-x-full {
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1253,6 +1266,10 @@ select {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1460,6 +1477,10 @@ select {
 
 .border-t-2 {
   border-top-width: 2px;
+}
+
+.border-e {
+  border-inline-end-width: 1px;
 }
 
 .border-solid {
@@ -2079,6 +2100,14 @@ select {
   outline-offset: 2px;
 }
 
+.\[--body-scroll\:true\] {
+  --body-scroll: true;
+}
+
+.\[--overlay-backdrop\:false\] {
+  --overlay-backdrop: false;
+}
+
 .\[--placement\:right\] {
   --placement: right;
 }
@@ -2481,6 +2510,11 @@ select {
   margin-top: 1.75rem;
 }
 
+.open.hs-overlay-open\:translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .open.hs-overlay-open\:opacity-100 {
   opacity: 1;
 }
@@ -2491,6 +2525,11 @@ select {
 
 .open .hs-overlay-open\:mt-7 {
   margin-top: 1.75rem;
+}
+
+.open .hs-overlay-open\:translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .open .hs-overlay-open\:opacity-100 {
@@ -2614,6 +2653,10 @@ select {
     margin-top: 0px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
   }
@@ -2678,8 +2721,20 @@ select {
     grid-column: span 3 / span 3;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:w-2\/6 {
     width: 33.333333%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
   }
 
   .lg\:grid-cols-3 {

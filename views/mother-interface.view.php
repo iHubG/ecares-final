@@ -146,7 +146,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                 <label for="date-of-consultation">Address:</label>
                                 <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="San Fermin, Cauayan City, Isabela">
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/4">
                                     <label for="date-of-consultation">Birthday:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="May 2, 1995">
@@ -162,7 +162,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                     <input type="radio" name="gender" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-rose-600 focus:ring-rose-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-rose-500 dark:checked:border-rose-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
                                     <label for="female" class="text-sm text-gray-500 dark:text-neutral-400">F</label>
                                 </div>  
-                                <div class="flex items-center gap-2 w-1/4">
+                                <div class="flex items-center gap-2 w-1/4 text-nowrap">
                                     <label for="date-of-consultation">Marital Status:</label>
                                     <input type="radio" name="marital-status" class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800" id="marital-status-1" checked="">
                                     <label for="single" class="text-sm text-gray-500 dark:text-neutral-400">S</label>
@@ -172,7 +172,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                     <label for="widowed" class="text-sm text-gray-500 dark:text-neutral-400">W</label>
                                 </div>    
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/2">
                                     <label for="date-of-consultation">Nationality:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="Philippines">
@@ -183,7 +183,7 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                 </div> 
                                 
                             </div>
-                            <div class="flex w-full justify-between items-center gap-5 mb-2">
+                            <div class="flex w-full justify-between flex-col lg:flex-row items-start lg:items-center gap-2 mb-2">
                                 <div class="flex items-center gap-2 w-1/2">
                                     <label for="date-of-consultation">Educational Attainment:</label>
                                     <input type="text" class="py-2 px-4 w-fit border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="College Graduate">
@@ -212,12 +212,12 @@ $userStartDate = '2024-08-19'; // Example date, replace with actual dynamic date
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>                   
                             </div>
-                            <div class="flex w-full justify-stretch items-center gap-5 mb-2">
-                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                            <div class="flex w-full justify-stretch flex-col lg:flex-row items-start lg:items-center gap-5 mb-2">
+                                <div class="flex items-start justify-start gap-2 flex-col lg:w-1/2 w-full">
                                     <label for="date-of-consultation">History of present Illness:</label>
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>  
-                                <div class="flex items-start justify-start gap-2 flex-col w-1/2">
+                                <div class="flex items-start justify-start gap-2 flex-col lg:w-1/2 w-full">
                                     <label for="date-of-consultation">Present Medication/s:</label>
                                     <input type="text" class="py-2 px-4 w-full border-gray-200 rounded-md border outline-none text-gray-700 dark:focus:border-0 dark:focus:ring-0 dark:border-0 2xl:text-lg text-base" disabled value="">
                                 </div>                 
