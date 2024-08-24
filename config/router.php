@@ -20,6 +20,7 @@
         '/mother' => 'mother',
         '/mother/community' => 'mother-community',
         '/mother/report' => 'mother-report',
+        '/mother/learning-materials' => 'mother-materials',
     ];
 
     $url = $_SERVER['REQUEST_URI'];
@@ -85,6 +86,9 @@
                 break;
             case 'mother-report':
                 require "./views/mother-report.view.php";
+                break;
+            case 'mother-materials':
+                require "./views/mother-learning-materials.view.php";
                 break;
             default:
                 echo "<h2 class='text-center text-4xl text-gray-500 mt-5'> 404 Page Not Found </h2>";

@@ -1104,6 +1104,10 @@ select {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1175,6 +1179,14 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .min-w-60 {
@@ -1944,6 +1956,18 @@ select {
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-rose-500 {
+  text-decoration-color: #f43f5e;
+}
+
+.decoration-sky-500 {
+  text-decoration-color: #0ea5e9;
+}
+
 .placeholder-gray-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
@@ -2657,6 +2681,10 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
   }
 
   .md\:max-w-2xl {
