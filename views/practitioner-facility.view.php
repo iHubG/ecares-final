@@ -34,7 +34,7 @@
                         <a href="/practitioner/learning-materials" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             Learning Materials                          
                         </a>
-                        <a href="mailto:ecares@gmail.com" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
+                        <a href="mailto:ecaresph@gmail.com" class="flex justify-center hover:bg-sky-100 px-3 py-3 rounded">
                             Contact Administrator                          
                         </a>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
@@ -45,6 +45,9 @@
                             <div class="hs-dropdown-menu z-50 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 dark:bg-sky-950 dark:border-0 dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-profile-modal" data-hs-overlay="#edit-profile-modal">
                                 Profile
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/practitioner-activity">
+                                Activity
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-sky-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/practitioner-login">
                                 Sign out
@@ -132,11 +135,17 @@
                     <p class="text-gray-500">20</p> 
                 </div>
                 <div class="grid lg:grid-cols-3 gap-2">
-                    <div class="flex shadow-lg p-1 items-center gap-2 bg-rose-100 rounded">
-                        <a class="hover:opacity-80 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="mothers-profile-modal" data-hs-overlay="#mothers-profile-modal">
-                            <img src="../public/img/avatar.png" alt="avatar" class="w-10">
+                    <div class="flex shadow-lg p-1 items-center justify-between gap-2 bg-rose-100 rounded">
+                        <div class="flex items-center gap-2">
+                            <a class="hover:opacity-80 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="mothers-profile-modal" data-hs-overlay="#mothers-profile-modal">
+                                <img src="../public/img/avatar.png" alt="avatar" class="w-10">
+                            </a>
+                            <p>Maria Clara</p>
+                        </div>
+                        
+                        <a href="/practitioner/mother-activity" class="cursor-pointer">
+                            <img src="../public/img/activity.png" alt="activity" class="w-8 transition hover:scale-110 ease-in-out">
                         </a>
-                        <p>Maria Clara</p>
                     </div>
                     
                 </div>
