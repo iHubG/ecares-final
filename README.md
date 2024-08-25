@@ -1,0 +1,3 @@
+# eCARES
+
+The Electronic-based Comprehensive Accessible and Relevant Education Support (eCARES) Platform for Postpartum Mothers is a digital platform designed to provide tailored educational resources and support to mothers after childbirth. eCARES focuses on enhancing postpartum care by offering accessible, evidence-based information on topics about postpartum mother and newborn health care. The platform integrates interactive features like virtual consultations with healthcare professionals and community forums for peer support. Its goal is to empower postpartum mothers with the knowledge and resources they need to ensure their well-being and that of their newborns, all through an easily navigable and user-friendly interface.
