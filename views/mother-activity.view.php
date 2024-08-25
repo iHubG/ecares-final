@@ -1,15 +1,12 @@
-<?php
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postpartum Mother | Learning Materials</title>
-    <link rel="stylesheet" href="../public/tailwind/style.css">
+    <title>Postpartum Mother | Activity</title>
+    <link rel="stylesheet" href="./public/tailwind/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="dark:bg-sky-900 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950 font-sans">
     <div class="dark:bg-sky-950 border shadow">
@@ -17,7 +14,7 @@
             <nav class="max-w-screen-2xl w-full mx-auto 2xl:px-0 sm:flex sm:items-center sm:justify-between">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
-                        <img src="../public/img/ecares.png" alt="ecares" class="w-9">
+                        <img src="./public/img/ecares.png" alt="ecares" class="w-9">
                         <a class="flex-none md:text-xl text-lg dark:text-white font-semibold focus:outline-none focus:opacity-80" href="/mother">
                         Postpartum Mother
                         </a>
@@ -34,7 +31,7 @@
                 
                 <div id="hs-navbar-example" class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
                     <div class="flex flex-col gap-2 mt-5 justify-center sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                        <a href="/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded bg-rose-100">
+                        <a href="/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
                             Home                         
                         </a>
                         <a href="/mother/community" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
@@ -48,14 +45,14 @@
                         </a>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
                             <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle flex justify-center items-center size-9 border-none text-sm font-semibold rounded-full border-0 border-gray-200  text-gray-800 shadow-sm focus:outline-none  disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:border-sky-950 dark:text-white dark:hover:bg-sky-950 dark:focus:bg-sky-950 hover:bg-gray-200" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                                <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
+                                <img src="./public/img/avatar.png" alt="avatar" class="w-8">  
                             </button>
 
                             <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 dark:bg-sky-950 dark:border-0 dark:border-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-custom-icon-trigger">
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="edit-mother-profile-modal" data-hs-overlay="#edit-mother-profile-modal">
                                 Profile
                                 </a>
-                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/mother-activity">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 bg-rose-100" href="/mother-activity">
                                 Activity
                                 </a>
                                 <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-gray-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" href="/mother-login">
@@ -96,54 +93,24 @@
     </div>
     
     <div class="container max-w-screen-2xl xl:px-5 px-2 py-5 font-sans">
-        <ol class="flex items-center whitespace-nowrap my-3">
-            <li class="inline-flex items-center">
-                <a class="flex items-center text-sm text-gray-500 hover:text-rose-600 focus:outline-none focus:text-rose-600" href="/mother">
-                Home
-                </a>
-                <svg class="shrink-0 mx-2 size-4 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 18 6-6-6-6"></path>
-                </svg>
-            </li>
-            <li class="inline-flex items-center text-sm font-semibold text-gray-800 truncate" aria-current="page">
-                Learning Materials
-            </li>
-        </ol>
-        <h3 class="text-center text-xl mt-5">Week 1 - Topic Title</h3>
-        <main class="flex items-center justify-center xl:py-8 py-5">
-            <div class="flex flex-col border w-full md:w-3/5 h-auto shadow px-3 py-3 rounded-lg gap-2 bg-gray-100">
+        
+        <div class="xl:py-8 py-5">
+            <h2 class="text-xl text-center mb-5">Activity</h2>
+            <div class="flex justify-center gap-2">
                 <div class="flex items-center gap-2">
-                    <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
-                    <h3 class="font-semibold">Doc Alvin</h3>
-                </div>
-                <div class="flex text-base">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, rerum rem similique dolor perspiciatis eius!</p>
-                </div>
-                <div class="text-sm">
-                    <p class="font-semibold">Links:</p>
-                    <div class="flex flex-col gap-1">
-                        <a href="https://youtu.be/EeRzmP84H_I?si=nC3ndPXy1CqR9UaX" class="underline text-blue-500" target="_blank">https://youtu.be/EeRzmP84H_I?si=nC3ndPXy1CqR9UaX</a>
-                        <a href="https://youtu.be/EeRzmP84H_I?si=nC3ndPXy1CqR9UaX" class="underline text-blue-500" target="_blank">https://youtu.be/EeRzmP84H_I?si=nC3ndPXy1CqR9UaX</a>
-                    </div>
-                </div>
-                <div class="text-sm">
-                    <p class="font-semibold">Documents:</p>
-                    <div class="flex flex-col gap-1">
-                        <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-file-word fa-lg" style="color: #74C0FC;"></i>
-                            <a href="../upload/documents/try.docx" class="underline" target="_blank">try.docx</a>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fa-sharp fa-solid fa-file-pdf fa-lg"></i>
-                            <a href="../upload/documents/try.pdf" class="underline" target="_blank">try.pdf</a>
-                        </div>
-                    </div>        
-                </div>
-                <div class="flex justify-end gap-2 items-center">
-                    <label for="hs-default-checkbox" class="text-sm text-gray-500">Mark as read</label>
-                    <input type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" id="hs-default-checkbox">            
-                </div>
+                    <img src="./public/img/avatar.png" alt="avatar" class="w-8">  
+                    <h3 class="text-sm dark:text-white">User</h3>
+                    <p class="text-sm">has logged in</p>
+                </div>      
+                <div class="flex items-center gap-2">
+                    <p class="text-sm">August 26, 2024</p>
+                    <p class="text-sm">12:03 AM</p>
+                </div>      
             </div>
+       
+            <hr class="w-auto">
+           
+
             <!-- Edit Postpartum Mother Profile Modal -->
             <div id="edit-mother-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-mother-profile-label">
                 <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-10 opacity-0 transition-all max-w-full max-h-full h-full m-2 xl:m-5">
@@ -260,13 +227,14 @@
             </div>
      
 
-        </main>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../public/javascript/darkmode.js"></script>
-    <script src="../node_modules/preline/dist/preline.js"></script>
-    <script src="../node_modules/lodash/lodash.min.js"></script>
-    <script src="../node_modules/dropzone/dist/dropzone-min.js"></script>
+    <script src="./public/javascript/pin.js"></script>
+    <script src="./public/javascript/darkmode.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./node_modules/lodash/lodash.min.js"></script>
+    <script src="./node_modules/dropzone/dist/dropzone-min.js"></script>
 </body>
 </html>
