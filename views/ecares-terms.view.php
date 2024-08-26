@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCARES - Terms of Service</title>
 </head>
-<body class="bg-sky-100 dark:bg-sky-900 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950 font-sans">
+<body class="bg-slate-100 dark:bg-sky-900 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-sky-900 dark:[&::-webkit-scrollbar-thumb]:bg-sky-950 font-sans">
     <a class="inline-flex items-center ms-5 mt-5 gap-x-1 text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500" href="#" onclick="goBack()">
         <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
         Back
@@ -31,8 +31,27 @@
 
             <h3 class="text-lg font-semibold">3. Content and Intellectual Property</h3>
             <p class="text-base"><b>a. Content Ownership: </b> All content provided on the Platform, including text, graphics, and logos, is the property of eCARES or its content suppliers and is protected by intellectual property laws.</p>
-
+            <p class="text-base"><b>b. User Content: </b> You retain ownership of any content you submit to the Platform but grant eCARES a non-exclusive, royalty-free, perpetual, and worldwide license to use, display, and distribute such content in connection with the Platform.</p>
             
+            <h3 class="text-lg font-semibold">4. Virtual Consultations and Forums</h3>
+            <p class="text-base"><b>a. Consultations:</b> Virtual consultations with healthcare professionals are provided for informational purposes only and should not be considered as medical advice. Always consult with a qualified healthcare provider for medical concerns.</p>
+            <p class="text-base"><b>b. Community Forums:</b> Community forums are intended for peer support and discussion. eCARES does not endorse or guarantee the accuracy of user-generated content and is not liable for any issues arising from forum discussions.</p>
+
+            <h3 class="text-lg font-semibold">5. Disclaimers and Limitation of Liability</h3>
+            <p class="text-base"><b>a. No Warranty:</b> The Platform is provided "as is" and "as available" without warranties of any kind, either express or implied.</p>
+            <p class="text-base"><b>b. Limitation of Liability:</b> To the maximum extent permitted by law, eCARES is not liable for any indirect, incidental, or consequential damages arising out of your use of the Platform.</p>
+        
+            <h3 class="text-lg font-semibold">6. Changes to Terms</h3>
+            <p class="text-base">eCARES may update these Terms from time to time. We will notify you of any significant changes. Your continued use of the Platform constitutes acceptance of the revised Terms.</p>
+        
+            <h3 class="text-lg font-semibold">7. Termination</h3>
+            <p class="text-base">eCARES reserves the right to suspend or terminate your access to the Platform at any time, with or without cause, and with or without notice.</p>
+        
+            <h3 class="text-lg font-semibold">8. Governing Law</h3>
+            <p class="text-base">These Terms are governed by and construed in accordance with the laws of the Republic of the Philippines. Any disputes arising under or in connection with these Terms shall be resolved in the courts located in Cauayan City, Philippines.</p>
+        
+            <h3 class="text-lg font-semibold">9. Contact Information</h3>
+            <p class="text-base">For questions or concerns regarding these Terms, please contact us at ecaresph@gmail.com.</p>
         </div>
     </div>
     <script>

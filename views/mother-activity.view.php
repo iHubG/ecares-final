@@ -96,20 +96,30 @@
         
         <div class="xl:py-8 py-5">
             <h2 class="text-xl text-center mb-5">Activity</h2>
-            <div class="flex justify-center gap-2">
-                <div class="flex items-center gap-2">
-                    <img src="./public/img/avatar.png" alt="avatar" class="w-8">  
-                    <h3 class="text-sm dark:text-white">User</h3>
-                    <p class="text-sm">has logged in</p>
-                </div>      
-                <div class="flex items-center gap-2">
-                    <p class="text-sm">August 26, 2024</p>
-                    <p class="text-sm">12:03 AM</p>
-                </div>      
-            </div>
-       
-            <hr class="w-auto">
-           
+            <div class="flex justify-center items-center flex-col gap-2">
+                <div class="flex w-fit border-b p-1 px-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./public/img/avatar.png" alt="avatar" class="w-8">  
+                        <h3 class="text-sm dark:text-white">User</h3>
+                        <p class="text-sm">has logged in &nbsp;</p>
+                    </div>      
+                    <div class="flex items-center gap-2">
+                        <p class="text-sm">August 26, 2024</p>
+                        <p class="text-sm">12:03 AM</p>
+                    </div> 
+                </div>
+                <div class="flex w-fit border-b p-1 px-2">
+                    <div class="flex items-center gap-2">
+                        <img src="./public/img/avatar.png" alt="avatar" class="w-8">  
+                        <h3 class="text-sm dark:text-white">User</h3>
+                        <p class="text-sm">has logged in &nbsp;</p>
+                    </div>      
+                    <div class="flex items-center gap-2">
+                        <p class="text-sm">August 26, 2024</p>
+                        <p class="text-sm">12:03 AM</p>
+                    </div> 
+                </div>                        
+            </div>  
 
             <!-- Edit Postpartum Mother Profile Modal -->
             <div id="edit-mother-profile-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="edit-mother-profile-label">
