@@ -143,7 +143,7 @@
                             <p>Maria Clara</p>
                         </div>
                         
-                        <a href="/practitioner/mother-activity" class="cursor-pointer">
+                        <a class="cursor-pointer" aria-haspopup="dialog" aria-expanded="false" aria-controls="mother-activity-modal" data-hs-overlay="#mother-activity-modal">
                             <img src="../public/img/activity.png" alt="activity" class="w-8 transition hover:scale-110 ease-in-out">
                         </a>
                     </div>
@@ -157,6 +157,90 @@
                 <img src="../public/img/create.png" alt="create" class="w-10 cursor-pointer drop-shadow-2xl hover:opacity-80" aria-haspopup="dialog" aria-expanded="false" aria-controls="send-sms-modal" data-hs-overlay="#send-sms-modal">
             </div>
 
+             <!-- Mother Health Condition Modal -->
+             <div id="mother-condition-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="mother-condition-label">
+                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
+                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
+                        <div class="flex justify-between items-center py-3 px-4">
+                            <h3 id="mother-condition-label" class="font-bold text-gray-800 dark:text-gray-300">
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="mother-activity-modal" data-hs-overlay="#mother-activity-modal">
+                                Back
+                                </button>
+                            </h3>
+
+                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#mother-condition-modal">
+                            <span class="sr-only">Close</span>
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                            </button>
+                        </div>
+
+                        <h2 class="text-xl text-center mb-5">Daily Monitoring Health Condition</h2>
+                        <div class="flex justify-center items-center flex-col gap-2 mb-5">
+                            <p class="text-base">Sample</p> 
+                        </div> 
+                        
+                        <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mother Activity Modal -->
+            <div id="mother-activity-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="mother-activity-label">
+                <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">
+                    <div class="flex flex-col bg-gray-200 dark:bg-sky-900 border shadow-sm rounded-xl pointer-events-auto">
+                        <div class="flex justify-between items-center py-3 px-4">
+                            <h3 id="mother-activity-label" class="font-bold text-gray-800 dark:text-gray-300">
+                                <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="mother-condition-modal" data-hs-overlay="#mother-condition-modal">
+                                Check Heath Condition
+                                </button>
+                            </h3>
+
+                            <button type="button" class="hs-dropup-toggle size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none" aria-label="Close" data-hs-overlay="#mother-activity-modal">
+                            <span class="sr-only">Close</span>
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                            </button>
+                        </div>
+
+                        <h2 class="text-xl text-center mb-5">Activity</h2>
+                        <div class="flex justify-center items-center flex-col gap-2 mb-5">
+                            <div class="flex w-fit border-b p-1 px-2">
+                                <div class="flex items-center gap-2">
+                                    <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
+                                    <h3 class="text-sm dark:text-white">User</h3>
+                                    <p class="text-sm">has logged in &nbsp;</p>
+                                </div>      
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm">August 26, 2024</p>
+                                    <p class="text-sm">12:03 AM</p>
+                                </div> 
+                            </div>
+                            <div class="flex w-fit border-b p-1 px-2">
+                                <div class="flex items-center gap-2">
+                                    <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
+                                    <h3 class="text-sm dark:text-white">User</h3>
+                                    <p class="text-sm">has logged in &nbsp;</p>
+                                </div>      
+                                <div class="flex items-center gap-2">
+                                    <p class="text-sm">August 26, 2024</p>
+                                    <p class="text-sm">12:03 AM</p>
+                                </div> 
+                            </div>                        
+                        </div> 
+                        
+                        <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Health Practitioners Modal -->
             <div id="health-practitioners-modal" class="hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none" role="dialog" tabindex="-1" aria-labelledby="health-practitioners-label">
                 <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all md:max-w-2xl md:w-full m-3 md:mx-auto">

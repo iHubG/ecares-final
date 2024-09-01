@@ -16,6 +16,7 @@ $routes = [
     '/practitioner/learning-materials' => 'practitioner-materials.view.php',
     '/practitioner/learning-content' => 'practitioner-learning-content.view.php',
     '/practitioner/facility' => 'practitioner-facility.view.php',
+    '/practitioner-activity' => 'practitioner-activity.view.php',
     '/mother-login' => 'mother-login.view.php',
     '/mother-signup' => 'mother-signup.view.php',
     '/mother' => 'mother-interface.view.php',

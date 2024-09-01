@@ -43,9 +43,21 @@
                         <a href="/mother/report" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
                             Report                         
                         </a>
-                        <a href="/mother" class="flex justify-center hover:bg-rose-100 px-3 py-3 rounded">
-                            Help                         
-                        </a>
+                       
+                        <div class="hs-dropdown relative inline-flex">
+                            <button id="hs-dropdown-default" type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded border-0 border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-rose-100 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                Help
+                            </button>
+
+                            <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-default">
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100" href="mailto:ecaresph@gmail.com">
+                                Contact Admin
+                                </a>
+                                <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-rose-100 focus:outline-none focus:bg-gray-100" href="mailto:ecaresph@gmail.com">
+                                Contact Health Practitioner
+                                </a>                          
+                            </div>
+                        </div>
                         <div class="hs-dropdown relative inline-flex justify-center items-center gap-2 ml-5">
                             <button id="hs-dropdown-custom-icon-trigger" type="button" class="hs-dropdown-toggle flex justify-center items-center size-9 border-none text-sm font-semibold rounded-full border-0 border-gray-200  text-gray-800 shadow-sm focus:outline-none  disabled:opacity-50 disabled:pointer-events-none dark:bg-sky-950 dark:border-sky-950 dark:text-white dark:hover:bg-sky-950 dark:focus:bg-sky-950 hover:bg-gray-200" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
                                 <img src="../public/img/avatar.png" alt="avatar" class="w-8">  
